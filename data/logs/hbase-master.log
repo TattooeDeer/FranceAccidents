@@ -1,0 +1,913 @@
+2019-05-06 03:57:06,394 INFO  [main] master.HMaster: STARTING service HMaster
+2019-05-06 03:57:06,401 INFO  [main] util.VersionInfo: HBase 2.1.2
+2019-05-06 03:57:06,401 INFO  [main] util.VersionInfo: Source code repository git://kalashnikov/Users/stack/checkouts/hbase.git revision=1dfc418f77801fbfb59a125756891b9100c1fc6d
+2019-05-06 03:57:06,402 INFO  [main] util.VersionInfo: Compiled by stack on Sun Dec 30 21:45:09 PST 2018
+2019-05-06 03:57:06,402 INFO  [main] util.VersionInfo: From source with checksum 5701bcce2fc4832a4b2990adc735b516
+2019-05-06 03:57:08,479 INFO  [main] master.HMasterCommandLine: Starting a zookeeper cluster
+2019-05-06 03:57:08,586 INFO  [main] server.ZooKeeperServer: Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+2019-05-06 03:57:08,587 INFO  [main] server.ZooKeeperServer: Server environment:host.name=hbase-docker
+2019-05-06 03:57:08,587 INFO  [main] server.ZooKeeperServer: Server environment:java.version=1.8.0_191
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:java.vendor=Oracle Corporation
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: 30121.jar:/opt/hbase/bin/../lib/osgi-resource-locator-1.0.1.jar:/opt/hbase/bin/../lib/paranamer-2.3.jar:/opt/hbase/bin/../lib/protobuf-java-2.5.0.jar:/opt/hbase/bin/../lib/snappy-java-1.0.5.jar:/opt/hbase/bin/../lib/spymemcached-2.12.2.jar:/opt/hbase/bin/../lib/validation-api-1.1.0.Final.jar:/opt/hbase/bin/../lib/xmlenc-0.52.jar:/opt/hbase/bin/../lib/xz-1.0.jar:/opt/hbase/bin/../lib/zookeeper-3.4.10.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/audience-annotations-0.5.0.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/commons-logging-1.2.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/findbugs-annotations-1.3.9-1.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/htrace-core4-4.2.0-incubating.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/log4j-1.2.17.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/slf4j-api-1.7.25.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/htrace-core-3.1.0-incubating.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/slf4j-log4j12-1.7.25.jar
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:os.name=Linux
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:os.arch=amd64
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:os.version=4.9.125-linuxkit
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:user.name=root
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:user.home=/root
+2019-05-06 03:57:08,588 INFO  [main] server.ZooKeeperServer: Server environment:user.dir=/
+2019-05-06 03:57:08,716 INFO  [main] server.ZooKeeperServer: Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /tmp/hbase-root/zookeeper/zookeeper_0/version-2 snapdir /tmp/hbase-root/zookeeper/zookeeper_0/version-2
+2019-05-06 03:57:08,736 INFO  [main] server.ZooKeeperServer: minSessionTimeout set to -1
+2019-05-06 03:57:08,736 INFO  [main] server.ZooKeeperServer: maxSessionTimeout set to -1
+2019-05-06 03:57:08,836 INFO  [main] server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:2181
+2019-05-06 03:57:09,386 ERROR [main] server.ZooKeeperServer: ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2019-05-06 03:57:09,451 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:40542
+2019-05-06 03:57:09,510 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ServerCnxn: The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, 2003003507=wchs, 2003003504=wchp, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2019-05-06 03:57:09,510 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ServerCnxn: The list of enabled four letter word commands is : [[wchs, stat, wchp, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, crst, cons]]
+2019-05-06 03:57:09,511 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Processing stat command from /127.0.0.1:40542
+2019-05-06 03:57:09,528 INFO  [Thread-2] server.NIOServerCnxn: Stat command output
+2019-05-06 03:57:09,531 INFO  [Thread-2] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:40542 (no session established for client)
+2019-05-06 03:57:09,532 INFO  [main] zookeeper.MiniZooKeeperCluster: Started MiniZooKeeperCluster and ran successful 'stat' on client port=2181
+2019-05-06 03:57:09,532 INFO  [main] master.HMasterCommandLine: Starting up instance of localHBaseCluster; master=1, regionserversCount=1
+2019-05-06 03:57:11,435 INFO  [main] metrics.MetricRegistries: Loaded MetricRegistries class org.apache.hadoop.hbase.metrics.impl.MetricRegistriesImpl
+2019-05-06 03:57:11,625 WARN  [main] util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-05-06 03:57:13,285 INFO  [main] regionserver.RSRpcServices: master/hbase-docker:16000 server-side Connection retries=45
+2019-05-06 03:57:13,446 INFO  [main] ipc.RpcExecutor: Instantiated default.FPBQ.Fifo with queueClass=class java.util.concurrent.LinkedBlockingQueue; numCallQueues=3, maxQueueLength=300, handlerCount=30
+2019-05-06 03:57:13,461 INFO  [main] ipc.RpcExecutor: Instantiated priority.FPBQ.Fifo with queueClass=class java.util.concurrent.LinkedBlockingQueue; numCallQueues=2, maxQueueLength=300, handlerCount=20
+2019-05-06 03:57:13,472 INFO  [main] ipc.RpcExecutor: Instantiated replication.FPBQ.Fifo with queueClass=class java.util.concurrent.LinkedBlockingQueue; numCallQueues=1, maxQueueLength=300, handlerCount=3
+2019-05-06 03:57:13,889 INFO  [main] ipc.RpcServerFactory: Creating org.apache.hadoop.hbase.ipc.NettyRpcServer hosting hbase.pb.MasterService, hbase.pb.RegionServerStatusService, hbase.pb.LockService, hbase.pb.HbckService, hbase.pb.ClientService, hbase.pb.AdminService
+2019-05-06 03:57:14,952 INFO  [main] ipc.NettyRpcServer: Bind to /172.17.0.2:16000
+2019-05-06 03:57:15,102 INFO  [main] hfile.CacheConfig: Created cacheConfig: CacheConfig:disabled
+2019-05-06 03:57:15,104 INFO  [main] hfile.CacheConfig: Created cacheConfig: CacheConfig:disabled
+2019-05-06 03:57:15,956 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=master:16000 connecting to ZooKeeper ensemble=hbase-docker:2181
+2019-05-06 03:57:15,967 INFO  [main] zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+2019-05-06 03:57:15,967 INFO  [main] zookeeper.ZooKeeper: Client environment:host.name=hbase-docker
+2019-05-06 03:57:15,968 INFO  [main] zookeeper.ZooKeeper: Client environment:java.version=1.8.0_191
+2019-05-06 03:57:15,968 INFO  [main] zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+2019-05-06 03:57:15,968 INFO  [main] zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2019-05-06 03:57:15,968 INFO  [main] zookeeper.ZooKeeper: 30121.jar:/opt/hbase/bin/../lib/osgi-resource-locator-1.0.1.jar:/opt/hbase/bin/../lib/paranamer-2.3.jar:/opt/hbase/bin/../lib/protobuf-java-2.5.0.jar:/opt/hbase/bin/../lib/snappy-java-1.0.5.jar:/opt/hbase/bin/../lib/spymemcached-2.12.2.jar:/opt/hbase/bin/../lib/validation-api-1.1.0.Final.jar:/opt/hbase/bin/../lib/xmlenc-0.52.jar:/opt/hbase/bin/../lib/xz-1.0.jar:/opt/hbase/bin/../lib/zookeeper-3.4.10.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/audience-annotations-0.5.0.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/commons-logging-1.2.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/findbugs-annotations-1.3.9-1.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/htrace-core4-4.2.0-incubating.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/log4j-1.2.17.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/slf4j-api-1.7.25.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/htrace-core-3.1.0-incubating.jar:/opt/hbase/bin/../lib/client-facing-thirdparty/slf4j-log4j12-1.7.25.jar
+2019-05-06 03:57:15,968 INFO  [main] zookeeper.ZooKeeper: Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2019-05-06 03:57:15,968 INFO  [main] zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2019-05-06 03:57:15,968 INFO  [main] zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2019-05-06 03:57:15,969 INFO  [main] zookeeper.ZooKeeper: Client environment:os.name=Linux
+2019-05-06 03:57:15,969 INFO  [main] zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2019-05-06 03:57:15,969 INFO  [main] zookeeper.ZooKeeper: Client environment:os.version=4.9.125-linuxkit
+2019-05-06 03:57:15,969 INFO  [main] zookeeper.ZooKeeper: Client environment:user.name=root
+2019-05-06 03:57:15,969 INFO  [main] zookeeper.ZooKeeper: Client environment:user.home=/root
+2019-05-06 03:57:15,969 INFO  [main] zookeeper.ZooKeeper: Client environment:user.dir=/
+2019-05-06 03:57:15,972 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=hbase-docker:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@6b9c69a9
+2019-05-06 03:57:16,032 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Opening socket connection to server hbase-docker/172.17.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-05-06 03:57:16,048 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Socket connection established to hbase-docker/172.17.0.2:2181, initiating session
+2019-05-06 03:57:16,054 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.17.0.2:55290
+2019-05-06 03:57:16,059 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.17.0.2:55290
+2019-05-06 03:57:16,073 INFO  [SyncThread:0] persistence.FileTxnLog: Creating new log file: log.1
+2019-05-06 03:57:16,097 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Session establishment complete on server hbase-docker/172.17.0.2:2181, sessionid = 0x16a8b49c57f0000, negotiated timeout = 10000
+2019-05-06 03:57:16,102 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x16a8b49c57f0000 with negotiated timeout 10000 for client /172.17.0.2:55290
+2019-05-06 03:57:16,332 INFO  [main] util.log: Logging initialized @11600ms
+2019-05-06 03:57:16,508 INFO  [main] http.HttpRequestLog: Http request log for http.requests.master is not defined
+2019-05-06 03:57:16,551 INFO  [main] http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.hbase.http.HttpServer$QuotingInputFilter)
+2019-05-06 03:57:16,553 INFO  [main] http.HttpServer: Added global filter 'clickjackingprevention' (class=org.apache.hadoop.hbase.http.ClickjackingPreventionFilter)
+2019-05-06 03:57:16,557 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context master
+2019-05-06 03:57:16,557 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2019-05-06 03:57:16,558 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2019-05-06 03:57:16,615 INFO  [main] http.HttpServer: Jetty bound to port 16010
+2019-05-06 03:57:16,618 INFO  [main] server.Server: jetty-9.3.19.v20170502
+2019-05-06 03:57:16,755 INFO  [main] handler.ContextHandler: Started o.e.j.s.ServletContextHandler@6ff37443{/logs,file:///opt/hbase/logs/,AVAILABLE}
+2019-05-06 03:57:16,762 INFO  [main] handler.ContextHandler: Started o.e.j.s.ServletContextHandler@53093491{/static,file:///opt/hbase/hbase-webapps/static/,AVAILABLE}
+2019-05-06 03:57:16,972 INFO  [main] handler.ContextHandler: Started o.e.j.w.WebAppContext@2a22ad2b{/,file:///opt/hbase/hbase-webapps/master/,AVAILABLE}{file:/opt/hbase/hbase-webapps/master}
+2019-05-06 03:57:16,983 INFO  [main] server.AbstractConnector: Started ServerConnector@27c04377{HTTP/1.1,[http/1.1]}{hbase-docker:16010}
+2019-05-06 03:57:16,983 INFO  [main] server.Server: Started @12251ms
+2019-05-06 03:57:16,990 INFO  [main] master.HMaster: hbase.rootdir=file:/data/hbase, hbase.cluster.distributed=false
+2019-05-06 03:57:17,108 INFO  [main] regionserver.RSRpcServices: regionserver/hbase-docker:16020 server-side Connection retries=45
+2019-05-06 03:57:17,108 INFO  [main] ipc.RpcExecutor: Instantiated default.FPBQ.Fifo with queueClass=class java.util.concurrent.LinkedBlockingQueue; numCallQueues=3, maxQueueLength=300, handlerCount=30
+2019-05-06 03:57:17,109 INFO  [main] ipc.RpcExecutor: Instantiated priority.FPBQ.Fifo with queueClass=class java.util.concurrent.LinkedBlockingQueue; numCallQueues=2, maxQueueLength=300, handlerCount=20
+2019-05-06 03:57:17,109 INFO  [main] ipc.RpcExecutor: Instantiated replication.FPBQ.Fifo with queueClass=class java.util.concurrent.LinkedBlockingQueue; numCallQueues=1, maxQueueLength=300, handlerCount=3
+2019-05-06 03:57:17,135 INFO  [main] ipc.RpcServerFactory: Creating org.apache.hadoop.hbase.ipc.NettyRpcServer hosting hbase.pb.ClientService, hbase.pb.AdminService
+2019-05-06 03:57:17,151 INFO  [main] io.ByteBufferPool: Created with bufferSize=64 KB and maxPoolSize=1.88 KB
+2019-05-06 03:57:17,175 INFO  [main] ipc.NettyRpcServer: Bind to /172.17.0.2:16020
+2019-05-06 03:57:17,197 INFO  [main] hfile.CacheConfig: Allocating onheap LruBlockCache size=193.38 MB, blockSize=64 KB
+2019-05-06 03:57:17,217 INFO  [main] hfile.CacheConfig: Created cacheConfig: blockCache=LruBlockCache{blockCount=0, currentSize=146.02 KB, freeSize=193.23 MB, maxSize=193.38 MB, heapSize=146.02 KB, minSize=183.71 MB, minFactor=0.95, multiSize=91.85 MB, multiFactor=0.5, singleSize=45.93 MB, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2019-05-06 03:57:17,219 INFO  [main] hfile.CacheConfig: Created cacheConfig: blockCache=LruBlockCache{blockCount=0, currentSize=146.02 KB, freeSize=193.23 MB, maxSize=193.38 MB, heapSize=146.02 KB, minSize=183.71 MB, minFactor=0.95, multiSize=91.85 MB, multiFactor=0.5, singleSize=45.93 MB, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2019-05-06 03:57:17,222 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=regionserver:16020 connecting to ZooKeeper ensemble=hbase-docker:2181
+2019-05-06 03:57:17,222 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=hbase-docker:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@29a69a35
+2019-05-06 03:57:17,226 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Opening socket connection to server hbase-docker/172.17.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-05-06 03:57:17,249 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Socket connection established to hbase-docker/172.17.0.2:2181, initiating session
+2019-05-06 03:57:17,249 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.17.0.2:55292
+2019-05-06 03:57:17,251 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.17.0.2:55292
+2019-05-06 03:57:17,257 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x16a8b49c57f0001 with negotiated timeout 10000 for client /172.17.0.2:55292
+2019-05-06 03:57:17,258 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Session establishment complete on server hbase-docker/172.17.0.2:2181, sessionid = 0x16a8b49c57f0001, negotiated timeout = 10000
+2019-05-06 03:57:17,285 INFO  [main] http.HttpRequestLog: Http request log for http.requests.regionserver is not defined
+2019-05-06 03:57:17,287 INFO  [main] http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.hbase.http.HttpServer$QuotingInputFilter)
+2019-05-06 03:57:17,288 INFO  [main] http.HttpServer: Added global filter 'clickjackingprevention' (class=org.apache.hadoop.hbase.http.ClickjackingPreventionFilter)
+2019-05-06 03:57:17,299 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context regionserver
+2019-05-06 03:57:17,299 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2019-05-06 03:57:17,300 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2019-05-06 03:57:17,303 INFO  [main] http.HttpServer: Jetty bound to port 16030
+2019-05-06 03:57:17,312 INFO  [main] server.Server: jetty-9.3.19.v20170502
+2019-05-06 03:57:17,317 INFO  [main] handler.ContextHandler: Started o.e.j.s.ServletContextHandler@de18f63{/logs,file:///opt/hbase/logs/,AVAILABLE}
+2019-05-06 03:57:17,318 INFO  [main] handler.ContextHandler: Started o.e.j.s.ServletContextHandler@6345e7b9{/static,file:///opt/hbase/hbase-webapps/static/,AVAILABLE}
+2019-05-06 03:57:17,347 INFO  [main] handler.ContextHandler: Started o.e.j.w.WebAppContext@369c9bb{/,file:///opt/hbase/hbase-webapps/regionserver/,AVAILABLE}{file:/opt/hbase/hbase-webapps/regionserver}
+2019-05-06 03:57:17,348 INFO  [main] server.AbstractConnector: Started ServerConnector@76d05cc9{HTTP/1.1,[http/1.1]}{hbase-docker:16030}
+2019-05-06 03:57:17,351 INFO  [main] server.Server: Started @12619ms
+2019-05-06 03:57:17,377 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.HMaster: Adding backup master ZNode /hbase/backup-masters/hbase-docker,16000,1557115029636
+2019-05-06 03:57:17,651 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.ActiveMasterManager: Deleting ZNode for /hbase/backup-masters/hbase-docker,16000,1557115029636 from backup master directory
+2019-05-06 03:57:17,680 WARN  [master/hbase-docker:16000:becomeActiveMaster] hbase.ZNodeClearer: Environment variable HBASE_ZNODE_FILE not set; znodes will not be cleared on crash by start scripts (Longer MTTR!)
+2019-05-06 03:57:17,681 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.ActiveMasterManager: Registered as active master=hbase-docker,16000,1557115029636
+2019-05-06 03:57:17,851 INFO  [master/hbase-docker:16000:becomeActiveMaster] util.FSUtils: Created version file at file:/data/hbase with version=8
+2019-05-06 03:57:17,934 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.MasterFileSystem: BOOTSTRAP: creating hbase:meta region
+2019-05-06 03:57:17,953 INFO  [master/hbase-docker:16000:becomeActiveMaster] regionserver.HRegion: rrier', VERSIONS => '2147483647', EVICT_BLOCKS_ON_CLOSE => 'false', NEW_VERSION_BEHAVIOR => 'false', KEEP_DELETED_CELLS => 'FALSE', CACHE_DATA_ON_WRITE => 'false', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', MIN_VERSIONS => '0', REPLICATION_SCOPE => '0', BLOOMFILTER => 'NONE', CACHE_INDEX_ON_WRITE => 'false', IN_MEMORY => 'true', CACHE_BLOOMS_ON_WRITE => 'false', PREFETCH_BLOCKS_ON_OPEN => 'false', COMPRESSION => 'NONE', BLOCKCACHE => 'true', BLOCKSIZE => '65536'}, {NAME => 'table', VERSIONS => '3', EVICT_BLOCKS_ON_CLOSE => 'false', NEW_VERSION_BEHAVIOR => 'false', KEEP_DELETED_CELLS => 'FALSE', CACHE_DATA_ON_WRITE => 'false', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', MIN_VERSIONS => '0', REPLICATION_SCOPE => '0', BLOOMFILTER => 'NONE', CACHE_INDEX_ON_WRITE => 'false', IN_MEMORY => 'true', CACHE_BLOOMS_ON_WRITE => 'false', PREFETCH_BLOCKS_ON_OPEN => 'false', COMPRESSION => 'NONE', BLOCKCACHE => 'true', BLOCKSIZE => '8192'} RootDir = file:/data/hbase Table name == hbase:meta
+2019-05-06 03:57:18,191 WARN  [StoreOpener-1588230740-1] util.CommonFSUtils: FileSystem doesn't support setStoragePolicy; HDFS-6584, HDFS-9345 not available. This is normal and expected on earlier Hadoop versions.
+java.lang.NoSuchMethodException: org.apache.hadoop.fs.LocalFileSystem.setStoragePolicy(org.apache.hadoop.fs.Path, java.lang.String)
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.hadoop.hbase.util.CommonFSUtils.invokeSetStoragePolicy(CommonFSUtils.java:565)
+	at org.apache.hadoop.hbase.util.CommonFSUtils.setStoragePolicy(CommonFSUtils.java:546)
+	at org.apache.hadoop.hbase.util.CommonFSUtils.setStoragePolicy(CommonFSUtils.java:514)
+	at org.apache.hadoop.hbase.regionserver.HRegionFileSystem.setStoragePolicy(HRegionFileSystem.java:194)
+	at org.apache.hadoop.hbase.regionserver.HStore.<init>(HStore.java:264)
+	at org.apache.hadoop.hbase.regionserver.HRegion.instantiateHStore(HRegion.java:5708)
+	at org.apache.hadoop.hbase.regionserver.HRegion$1.call(HRegion.java:1043)
+	at org.apache.hadoop.hbase.regionserver.HRegion$1.call(HRegion.java:1040)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-06 03:57:18,262 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Created cacheConfig for info: blockCache=LruBlockCache{blockCount=0, currentSize=146.02 KB, freeSize=193.23 MB, maxSize=193.38 MB, heapSize=146.02 KB, minSize=183.71 MB, minFactor=0.95, multiSize=91.85 MB, multiFactor=0.5, singleSize=45.93 MB, singleFactor=0.25}, cacheDataOnRead=false, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2019-05-06 03:57:18,289 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [128 MB, 8.00 EB, 8.00 EB); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2019-05-06 03:57:18,354 INFO  [StoreOpener-1588230740-1] regionserver.HStore: Store=info,  memstore type=DefaultMemStore, storagePolicy=HOT, verifyBulkLoads=false, parallelPutCountPrintThreshold=50, encoding=NONE, compression=NONE
+2019-05-06 03:57:18,372 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Created cacheConfig for rep_barrier: blockCache=LruBlockCache{blockCount=0, currentSize=146.02 KB, freeSize=193.23 MB, maxSize=193.38 MB, heapSize=146.02 KB, minSize=183.71 MB, minFactor=0.95, multiSize=91.85 MB, multiFactor=0.5, singleSize=45.93 MB, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2019-05-06 03:57:18,373 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [128 MB, 8.00 EB, 8.00 EB); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2019-05-06 03:57:18,388 INFO  [StoreOpener-1588230740-1] regionserver.HStore: Store=rep_barrier,  memstore type=DefaultMemStore, storagePolicy=HOT, verifyBulkLoads=false, parallelPutCountPrintThreshold=50, encoding=NONE, compression=NONE
+2019-05-06 03:57:18,395 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Created cacheConfig for table: blockCache=LruBlockCache{blockCount=0, currentSize=146.02 KB, freeSize=193.23 MB, maxSize=193.38 MB, heapSize=146.02 KB, minSize=183.71 MB, minFactor=0.95, multiSize=91.85 MB, multiFactor=0.5, singleSize=45.93 MB, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2019-05-06 03:57:18,396 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [128 MB, 8.00 EB, 8.00 EB); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2019-05-06 03:57:18,403 INFO  [StoreOpener-1588230740-1] regionserver.HStore: Store=table,  memstore type=DefaultMemStore, storagePolicy=HOT, verifyBulkLoads=false, parallelPutCountPrintThreshold=50, encoding=NONE, compression=NONE
+2019-05-06 03:57:18,466 INFO  [master/hbase-docker:16000:becomeActiveMaster] regionserver.HRegion: Opened 1588230740; next sequenceid=2
+2019-05-06 03:57:18,470 INFO  [master/hbase-docker:16000:becomeActiveMaster] regionserver.HRegion: Closed hbase:meta,,1.1588230740
+2019-05-06 03:57:18,690 INFO  [master/hbase-docker:16000:becomeActiveMaster] coordination.SplitLogManagerCoordination: Found 0 orphan tasks and 0 rescan nodes
+2019-05-06 03:57:18,866 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x1ca90965] zookeeper.ZooKeeper: Initiating client connection, connectString=hbase-docker:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$80/1135705430@6b3eb44
+2019-05-06 03:57:18,887 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x1ca90965-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Opening socket connection to server hbase-docker/172.17.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-05-06 03:57:18,887 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.17.0.2:55294
+2019-05-06 03:57:18,889 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x1ca90965-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Socket connection established to hbase-docker/172.17.0.2:2181, initiating session
+2019-05-06 03:57:18,891 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.17.0.2:55294
+2019-05-06 03:57:18,894 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x16a8b49c57f0002 with negotiated timeout 10000 for client /172.17.0.2:55294
+2019-05-06 03:57:18,894 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x1ca90965-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Session establishment complete on server hbase-docker/172.17.0.2:2181, sessionid = 0x16a8b49c57f0002, negotiated timeout = 10000
+2019-05-06 03:57:19,044 INFO  [master/hbase-docker:16000:becomeActiveMaster] procedure2.ProcedureExecutor: Starting 16 core workers (bigger of cpus/4 or 16) with max (burst) worker count=160, start 1 urgent thread(s)
+2019-05-06 03:57:19,134 WARN  [master/hbase-docker:16000:becomeActiveMaster] util.CommonFSUtils: Your Hadoop installation does not include the StreamCapabilities class from HDFS-11644, so we will skip checking if any FSDataOutputStreams actually support hflush/hsync. If you are running on top of HDFS this probably just means you have an older version and this can be ignored. If you are running on top of an alternate FileSystem implementation you should manually verify that hflush and hsync are implemented; otherwise you risk data loss and hard to diagnose errors when our assumptions are violated.
+2019-05-06 03:57:19,140 INFO  [master/hbase-docker:16000:becomeActiveMaster] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=1
+2019-05-06 03:57:19,146 INFO  [master/hbase-docker:16000:becomeActiveMaster] procedure2.ProcedureExecutor: Recovered WALProcedureStore lease in 97msec
+2019-05-06 03:57:19,149 INFO  [master/hbase-docker:16000:becomeActiveMaster] procedure2.ProcedureExecutor: Loaded WALProcedureStore in 2msec
+2019-05-06 03:57:19,149 INFO  [master/hbase-docker:16000:becomeActiveMaster] procedure2.RemoteProcedureDispatcher: Instantiated, coreThreads=128 (allowCoreThreadTimeOut=true), queueMaxSize=32, operationDelay=150
+2019-05-06 03:57:19,242 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.RegionServerTracker: Starting RegionServerTracker; 0 have existing ServerCrashProcedures, 0 possibly 'live' servers, and 0 'splitting'.
+2019-05-06 03:57:19,332 INFO  [master/hbase-docker:16000:becomeActiveMaster] balancer.BaseLoadBalancer: slop=0.001, systemTablesOnMaster=false
+2019-05-06 03:57:19,354 INFO  [master/hbase-docker:16000:becomeActiveMaster] balancer.StochasticLoadBalancer: Loaded config; maxSteps=1000000, stepsPerRegion=800, maxRunningTime=30000, isByTable=false, etc.
+2019-05-06 03:57:19,469 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.HMaster: Active/primary master=hbase-docker,16000,1557115029636, sessionid=0x16a8b49c57f0000, setting cluster-up flag (Was=false)
+2019-05-06 03:57:19,502 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x16a8b49c57f0000 type:create cxid:0x2b zxid:0x12 txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc Error:KeeperErrorCode = NoNode for /hbase/flush-table-proc
+2019-05-06 03:57:19,582 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x16a8b49c57f0000 type:create cxid:0x35 zxid:0x17 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot Error:KeeperErrorCode = NoNode for /hbase/online-snapshot
+2019-05-06 03:57:19,705 INFO  [RS:0;hbase-docker:16020] regionserver.HRegionServer: ClusterId : 27e13846-30aa-4912-b92d-355699ea9495
+2019-05-06 03:57:19,721 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x16a8b49c57f0001 type:create cxid:0x7 zxid:0x1c txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc/acquired Error:KeeperErrorCode = NodeExists for /hbase/flush-table-proc/acquired
+2019-05-06 03:57:19,770 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x16a8b49c57f0001 type:create cxid:0xa zxid:0x1d txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/acquired Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/acquired
+2019-05-06 03:57:19,780 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x0cf22c1a] zookeeper.ZooKeeper: Initiating client connection, connectString=hbase-docker:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$80/1135705430@6b3eb44
+2019-05-06 03:57:19,782 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x0cf22c1a-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Opening socket connection to server hbase-docker/172.17.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-05-06 03:57:19,783 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.17.0.2:55296
+2019-05-06 03:57:19,785 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x0cf22c1a-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Socket connection established to hbase-docker/172.17.0.2:2181, initiating session
+2019-05-06 03:57:19,797 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.17.0.2:55296
+2019-05-06 03:57:19,802 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x16a8b49c57f0003 with negotiated timeout 10000 for client /172.17.0.2:55296
+2019-05-06 03:57:19,802 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x0cf22c1a-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Session establishment complete on server hbase-docker/172.17.0.2:2181, sessionid = 0x16a8b49c57f0003, negotiated timeout = 10000
+2019-05-06 03:57:19,834 INFO  [RS:0;hbase-docker:16020] regionserver.RegionServerCoprocessorHost: System coprocessor loading is enabled
+2019-05-06 03:57:19,834 INFO  [RS:0;hbase-docker:16020] regionserver.RegionServerCoprocessorHost: Table coprocessor loading is enabled
+2019-05-06 03:57:19,840 INFO  [RS:0;hbase-docker:16020] regionserver.HRegionServer: reportForDuty to master=hbase-docker,16000,1557115029636 with port=16020, startcode=1557115037105
+2019-05-06 03:57:19,852 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.HMaster: hbase:meta {1588230740 state=OFFLINE, ts=1557115039217, server=null}
+2019-05-06 03:57:20,330 INFO  [master/hbase-docker:16000:becomeActiveMaster] procedure2.TimeoutExecutorThread: ADDED pid=-1, state=WAITING_TIMEOUT; org.apache.hadoop.hbase.procedure2.CompletedProcedureCleaner; timeout=30000, timestamp=1557115070330
+2019-05-06 03:57:20,341 INFO  [master/hbase-docker:16000:becomeActiveMaster] cleaner.CleanerChore: Cleaner pool size is 1
+2019-05-06 03:57:20,347 INFO  [master/hbase-docker:16000:becomeActiveMaster] zookeeper.RecoverableZooKeeper: Process identifier=replicationLogCleaner connecting to ZooKeeper ensemble=hbase-docker:2181
+2019-05-06 03:57:20,356 INFO  [master/hbase-docker:16000:becomeActiveMaster] zookeeper.ZooKeeper: Initiating client connection, connectString=hbase-docker:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@4c60be6b
+2019-05-06 03:57:20,382 INFO  [master/hbase-docker:16000:becomeActiveMaster] cleaner.LogCleaner: Creating OldWALs cleaners with size=2
+2019-05-06 03:57:20,464 INFO  [master/hbase-docker:16000:becomeActiveMaster-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Opening socket connection to server hbase-docker/172.17.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-05-06 03:57:20,464 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.17.0.2:55298
+2019-05-06 03:57:20,464 INFO  [master/hbase-docker:16000:becomeActiveMaster-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Socket connection established to hbase-docker/172.17.0.2:2181, initiating session
+2019-05-06 03:57:20,465 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.17.0.2:55298
+2019-05-06 03:57:20,466 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x16a8b49c57f0004 with negotiated timeout 10000 for client /172.17.0.2:55298
+2019-05-06 03:57:20,467 INFO  [master/hbase-docker:16000:becomeActiveMaster-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Session establishment complete on server hbase-docker/172.17.0.2:2181, sessionid = 0x16a8b49c57f0004, negotiated timeout = 10000
+2019-05-06 03:57:20,514 INFO  [PEWorker-4] procedure2.ProcedureExecutor: Initialized subprocedures=[{pid=2, ppid=1, state=RUNNABLE:REGION_TRANSITION_QUEUE; AssignProcedure table=hbase:meta, region=1588230740}]
+2019-05-06 03:57:20,596 INFO  [RpcServer.default.FPBQ.Fifo.handler=29,queue=2,port=16000] master.ServerManager: Registering regionserver=hbase-docker,16020,1557115037105
+2019-05-06 03:57:20,610 INFO  [PEWorker-1] procedure.MasterProcedureScheduler: Took xlock for pid=2, ppid=1, state=RUNNABLE:REGION_TRANSITION_QUEUE; AssignProcedure table=hbase:meta, region=1588230740
+2019-05-06 03:57:20,656 INFO  [PEWorker-1] assignment.AssignProcedure: Starting pid=2, ppid=1, state=RUNNABLE:REGION_TRANSITION_QUEUE, locked=true; AssignProcedure table=hbase:meta, region=1588230740; rit=OFFLINE, location=null; forceNewPlan=false, retain=false
+2019-05-06 03:57:20,701 WARN  [RS:0;hbase-docker:16020] hbase.ZNodeClearer: Environment variable HBASE_ZNODE_FILE not set; znodes will not be cleared on crash by start scripts (Longer MTTR!)
+2019-05-06 03:57:20,702 INFO  [RegionServerTracker-0] master.RegionServerTracker: RegionServer ephemeral node created, adding [hbase-docker,16020,1557115037105]
+2019-05-06 03:57:20,816 WARN  [PEWorker-4] assignment.AssignmentManager: Why is ServerStateNode for hbase-docker,16020,1557115037105 empty at this point? Creating...
+2019-05-06 03:57:20,819 INFO  [PEWorker-4] assignment.AssignProcedure: Early suspend! pid=2, ppid=1, state=RUNNABLE:REGION_TRANSITION_DISPATCH, locked=true; AssignProcedure table=hbase:meta, region=1588230740; rit=OFFLINE, location=hbase-docker,16020,1557115037105
+2019-05-06 03:57:21,121 INFO  [RS:0;hbase-docker:16020] wal.WALFactory: Instantiating WALProvider of type class org.apache.hadoop.hbase.wal.AsyncFSWALProvider
+2019-05-06 03:57:21,205 INFO  [RS:0;hbase-docker:16020] regionserver.MetricsRegionServerWrapperImpl: Computing regionserver metrics every 5000 milliseconds
+2019-05-06 03:57:21,258 INFO  [RS:0;hbase-docker:16020] regionserver.MemStoreFlusher: globalMemStoreLimit=193.4 M, globalMemStoreLimitLowMark=183.7 M, Offheap=false
+2019-05-06 03:57:21,273 INFO  [RS:0;hbase-docker:16020] throttle.PressureAwareCompactionThroughputController: Compaction throughput configurations, higher bound: 20.00 MB/second, lower bound 10.00 MB/second, off peak: unlimited, tuning period: 60000 ms
+2019-05-06 03:57:21,277 INFO  [RS:0;hbase-docker:16020] regionserver.HRegionServer: CompactionChecker runs every PT10S
+2019-05-06 03:57:21,376 INFO  [SplitLogWorker-hbase-docker:16020] regionserver.SplitLogWorker: SplitLogWorker hbase-docker,16020,1557115037105 starting
+2019-05-06 03:57:21,394 INFO  [RS:0;hbase-docker:16020] regionserver.HeapMemoryManager: Starting, tuneOn=false
+2019-05-06 03:57:21,402 INFO  [RS:0;hbase-docker:16020] regionserver.ChunkCreator: Allocating data MemStoreChunkPool with chunk size 2 MB, max count 87, initial count 0
+2019-05-06 03:57:21,405 INFO  [RS:0;hbase-docker:16020] regionserver.ChunkCreator: Allocating index MemStoreChunkPool with chunk size 204.80 KB, max count 96, initial count 0
+2019-05-06 03:57:21,466 INFO  [RS:0;hbase-docker:16020] regionserver.HRegionServer: Serving as hbase-docker,16020,1557115037105, RpcServer on hbase-docker/172.17.0.2:16020, sessionid=0x16a8b49c57f0001
+2019-05-06 03:57:21,473 INFO  [RS:0;hbase-docker:16020] quotas.RegionServerRpcQuotaManager: Quota support disabled
+2019-05-06 03:57:21,473 INFO  [RS:0;hbase-docker:16020] quotas.RegionServerSpaceQuotaManager: Quota support disabled, not starting space quota manager.
+2019-05-06 03:57:24,535 INFO  [RS:0;hbase-docker:16020] wal.AbstractFSWAL: WAL configuration: blocksize=64 MB, rollsize=32 MB, prefix=hbase-docker%2C16020%2C1557115037105, suffix=, logDir=file:/data/hbase/WALs/hbase-docker,16020,1557115037105, archiveDir=file:/data/hbase/oldWALs
+2019-05-06 03:57:24,639 INFO  [RS:0;hbase-docker:16020] wal.AbstractFSWAL: New WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557115044572
+2019-05-06 03:57:24,696 INFO  [PEWorker-8] zookeeper.MetaTableLocator: Setting hbase:meta (replicaId=0) location in ZooKeeper as hbase-docker,16020,1557115037105
+2019-05-06 03:57:24,729 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x16a8b49c57f0000 type:setData cxid:0x42 zxid:0x21 txntype:-1 reqpath:n/a Error Path:/hbase/meta-region-server Error:KeeperErrorCode = NoNode for /hbase/meta-region-server
+2019-05-06 03:57:24,742 INFO  [PEWorker-8] assignment.RegionTransitionProcedure: Dispatch pid=2, ppid=1, state=RUNNABLE:REGION_TRANSITION_DISPATCH, locked=true; AssignProcedure table=hbase:meta, region=1588230740
+2019-05-06 03:57:25,063 INFO  [RpcServer.priority.FPBQ.Fifo.handler=19,queue=1,port=16020] regionserver.RSRpcServices: Open hbase:meta,,1.1588230740
+2019-05-06 03:57:25,076 INFO  [RS_OPEN_META-regionserver/hbase-docker:16020-0] wal.WALFactory: Instantiating WALProvider of type class org.apache.hadoop.hbase.wal.AsyncFSWALProvider
+2019-05-06 03:57:25,091 INFO  [RS_OPEN_META-regionserver/hbase-docker:16020-0] wal.AbstractFSWAL: WAL configuration: blocksize=64 MB, rollsize=32 MB, prefix=hbase-docker%2C16020%2C1557115037105.meta, suffix=.meta, logDir=file:/data/hbase/WALs/hbase-docker,16020,1557115037105, archiveDir=file:/data/hbase/oldWALs
+2019-05-06 03:57:25,122 INFO  [RS_OPEN_META-regionserver/hbase-docker:16020-0] wal.AbstractFSWAL: New WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557115045097.meta
+2019-05-06 03:57:25,483 INFO  [RS_OPEN_META-regionserver/hbase-docker:16020-0] regionserver.RegionCoprocessorHost: Loaded coprocessor org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint from HTD of hbase:meta successfully.
+2019-05-06 03:57:25,525 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Created cacheConfig for info: blockCache=LruBlockCache{blockCount=0, currentSize=146.02 KB, freeSize=193.23 MB, maxSize=193.38 MB, heapSize=146.02 KB, minSize=183.71 MB, minFactor=0.95, multiSize=91.85 MB, multiFactor=0.5, singleSize=45.93 MB, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2019-05-06 03:57:25,531 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [128 MB, 8.00 EB, 8.00 EB); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2019-05-06 03:57:25,537 INFO  [StoreOpener-1588230740-1] regionserver.HStore: Store=info,  memstore type=DefaultMemStore, storagePolicy=HOT, verifyBulkLoads=false, parallelPutCountPrintThreshold=50, encoding=NONE, compression=NONE
+2019-05-06 03:57:25,542 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Created cacheConfig for rep_barrier: blockCache=LruBlockCache{blockCount=0, currentSize=146.02 KB, freeSize=193.23 MB, maxSize=193.38 MB, heapSize=146.02 KB, minSize=183.71 MB, minFactor=0.95, multiSize=91.85 MB, multiFactor=0.5, singleSize=45.93 MB, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2019-05-06 03:57:25,543 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [128 MB, 8.00 EB, 8.00 EB); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2019-05-06 03:57:25,550 INFO  [StoreOpener-1588230740-1] regionserver.HStore: Store=rep_barrier,  memstore type=DefaultMemStore, storagePolicy=HOT, verifyBulkLoads=false, parallelPutCountPrintThreshold=50, encoding=NONE, compression=NONE
+2019-05-06 03:57:25,557 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Created cacheConfig for table: blockCache=LruBlockCache{blockCount=0, currentSize=146.02 KB, freeSize=193.23 MB, maxSize=193.38 MB, heapSize=146.02 KB, minSize=183.71 MB, minFactor=0.95, multiSize=91.85 MB, multiFactor=0.5, singleSize=45.93 MB, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2019-05-06 03:57:25,559 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [128 MB, 8.00 EB, 8.00 EB); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2019-05-06 03:57:25,562 INFO  [StoreOpener-1588230740-1] regionserver.HStore: Store=table,  memstore type=DefaultMemStore, storagePolicy=HOT, verifyBulkLoads=false, parallelPutCountPrintThreshold=50, encoding=NONE, compression=NONE
+2019-05-06 03:57:25,604 INFO  [RS_OPEN_META-regionserver/hbase-docker:16020-0] regionserver.HRegion: Opened 1588230740; next sequenceid=2
+2019-05-06 03:57:25,754 INFO  [PostOpenDeployTasks:1588230740] regionserver.HRegionServer: Post open deploy tasks for hbase:meta,,1.1588230740
+2019-05-06 03:57:25,816 INFO  [PEWorker-9] zookeeper.MetaTableLocator: Setting hbase:meta (replicaId=0) location in ZooKeeper as hbase-docker,16020,1557115037105
+2019-05-06 03:57:25,860 INFO  [PEWorker-9] procedure2.ProcedureExecutor: Finished subprocedure pid=2, resume processing parent pid=1, state=RUNNABLE, locked=true; InitMetaProcedure table=hbase:meta
+2019-05-06 03:57:25,861 INFO  [PEWorker-9] procedure2.ProcedureExecutor: Finished pid=2, ppid=1, state=SUCCESS; AssignProcedure table=hbase:meta, region=1588230740 in 5.3260sec, unfinishedSiblingCount=0
+2019-05-06 03:57:25,966 INFO  [PEWorker-10] procedure2.ProcedureExecutor: Finished pid=1, state=SUCCESS; InitMetaProcedure table=hbase:meta in 6.0870sec
+2019-05-06 03:57:25,967 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.HMaster: Master startup: status=Wait for region servers to report in, state=RUNNING, startTime=1557115037626, completionTime=-1
+2019-05-06 03:57:25,967 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.ServerManager: Waiting on regionserver count=1; waited=0ms, expecting min=1 server(s), max=NO_LIMIT server(s), timeout=4500ms, lastChange=0ms
+2019-05-06 03:57:27,497 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.ServerManager: Waiting on regionserver count=1; waited=1530ms, expecting min=1 server(s), max=NO_LIMIT server(s), timeout=4500ms, lastChange=-1530ms
+2019-05-06 03:57:27,773 INFO  [RpcServer.default.FPBQ.Fifo.handler=29,queue=2,port=16000] assignment.AssignmentManager: META REPORTED: rit=OPEN, location=hbase-docker,16020,1557115037105, table=hbase:meta, region=1588230740
+2019-05-06 03:57:27,780 WARN  [RpcServer.default.FPBQ.Fifo.handler=29,queue=2,port=16000] assignment.AssignmentManager: META REPORTED but no procedure found (complete?); set location=hbase-docker,16020,1557115037105
+2019-05-06 03:57:29,033 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.ServerManager: Waiting on regionserver count=1; waited=3065ms, expecting min=1 server(s), max=NO_LIMIT server(s), timeout=4500ms, lastChange=-3065ms
+2019-05-06 03:57:30,514 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.ServerManager: Finished waiting on RegionServer count=1; waited=4547ms, expected min=1 server(s), max=NO_LIMIT server(s), master is running
+2019-05-06 03:57:30,815 INFO  [master/hbase-docker:16000:becomeActiveMaster] assignment.AssignmentManager: Number of RegionServers=1
+2019-05-06 03:57:30,816 INFO  [master/hbase-docker:16000:becomeActiveMaster] procedure2.TimeoutExecutorThread: ADDED pid=-1, state=WAITING_TIMEOUT; org.apache.hadoop.hbase.master.assignment.AssignmentManager$RegionInTransitionChore; timeout=60000, timestamp=1557115110816
+2019-05-06 03:57:30,816 INFO  [master/hbase-docker:16000:becomeActiveMaster] assignment.AssignmentManager: Joined the cluster in 301msec
+2019-05-06 03:57:31,019 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.TableNamespaceManager: Namespace table not found. Creating...
+2019-05-06 03:57:31,034 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.HMaster: Client=null/null create 'hbase:namespace', {NAME => 'info', VERSIONS => '10', EVICT_BLOCKS_ON_CLOSE => 'false', NEW_VERSION_BEHAVIOR => 'false', KEEP_DELETED_CELLS => 'FALSE', CACHE_DATA_ON_WRITE => 'false', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', MIN_VERSIONS => '0', REPLICATION_SCOPE => '0', BLOOMFILTER => 'ROW', CACHE_INDEX_ON_WRITE => 'false', IN_MEMORY => 'true', CACHE_BLOOMS_ON_WRITE => 'false', PREFETCH_BLOCKS_ON_OPEN => 'false', COMPRESSION => 'NONE', BLOCKCACHE => 'true', BLOCKSIZE => '8192'}
+2019-05-06 03:57:31,346 INFO  [RegionOpenAndInitThread-hbase:namespace-1] regionserver.HRegion: creating HRegion hbase:namespace HTD == 'hbase:namespace', {NAME => 'info', VERSIONS => '10', EVICT_BLOCKS_ON_CLOSE => 'false', NEW_VERSION_BEHAVIOR => 'false', KEEP_DELETED_CELLS => 'FALSE', CACHE_DATA_ON_WRITE => 'false', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', MIN_VERSIONS => '0', REPLICATION_SCOPE => '0', BLOOMFILTER => 'ROW', CACHE_INDEX_ON_WRITE => 'false', IN_MEMORY => 'true', CACHE_BLOOMS_ON_WRITE => 'false', PREFETCH_BLOCKS_ON_OPEN => 'false', COMPRESSION => 'NONE', BLOCKCACHE => 'true', BLOCKSIZE => '8192'} RootDir = file:/data/hbase/.tmp Table name == hbase:namespace
+2019-05-06 03:57:31,382 INFO  [RegionOpenAndInitThread-hbase:namespace-1] regionserver.HRegion: Closed hbase:namespace,,1557115051022.73bd4e47a5e60dbd74906c2ec81d72fb.
+2019-05-06 03:57:31,417 INFO  [HBase-Metrics2-1] impl.GlobalMetricRegistriesAdapter: Registering RegionServer,sub=Coprocessor.Region.CP_org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint Metrics about HBase RegionObservers
+2019-05-06 03:57:31,529 INFO  [PEWorker-11] hbase.MetaTableAccessor: Added 1 regions to meta.
+2019-05-06 03:57:31,719 INFO  [PEWorker-11] hbase.MetaTableAccessor: Updated tableName=hbase:namespace, state=ENABLING in hbase:meta
+2019-05-06 03:57:31,740 INFO  [PEWorker-11] procedure2.ProcedureExecutor: Initialized subprocedures=[{pid=4, ppid=3, state=RUNNABLE:REGION_TRANSITION_QUEUE; AssignProcedure table=hbase:namespace, region=73bd4e47a5e60dbd74906c2ec81d72fb, target=hbase-docker,16020,1557115037105}]
+2019-05-06 03:57:31,750 INFO  [PEWorker-12] procedure.MasterProcedureScheduler: Took xlock for pid=4, ppid=3, state=RUNNABLE:REGION_TRANSITION_QUEUE; AssignProcedure table=hbase:namespace, region=73bd4e47a5e60dbd74906c2ec81d72fb, target=hbase-docker,16020,1557115037105
+2019-05-06 03:57:31,752 INFO  [PEWorker-12] assignment.AssignProcedure: Starting pid=4, ppid=3, state=RUNNABLE:REGION_TRANSITION_QUEUE, locked=true; AssignProcedure table=hbase:namespace, region=73bd4e47a5e60dbd74906c2ec81d72fb, target=hbase-docker,16020,1557115037105; rit=OFFLINE, location=hbase-docker,16020,1557115037105; forceNewPlan=false, retain=false
+2019-05-06 03:57:31,906 INFO  [PEWorker-13] assignment.RegionStateStore: pid=4 updating hbase:meta row=73bd4e47a5e60dbd74906c2ec81d72fb, regionState=OPENING, regionLocation=hbase-docker,16020,1557115037105
+2019-05-06 03:57:31,919 INFO  [PEWorker-13] assignment.RegionTransitionProcedure: Dispatch pid=4, ppid=3, state=RUNNABLE:REGION_TRANSITION_DISPATCH, locked=true; AssignProcedure table=hbase:namespace, region=73bd4e47a5e60dbd74906c2ec81d72fb, target=hbase-docker,16020,1557115037105
+2019-05-06 03:57:32,099 INFO  [RpcServer.priority.FPBQ.Fifo.handler=19,queue=1,port=16020] regionserver.RSRpcServices: Open hbase:namespace,,1557115051022.73bd4e47a5e60dbd74906c2ec81d72fb.
+2019-05-06 03:57:32,244 INFO  [StoreOpener-73bd4e47a5e60dbd74906c2ec81d72fb-1] hfile.CacheConfig: Created cacheConfig for info: blockCache=LruBlockCache{blockCount=0, currentSize=146.02 KB, freeSize=193.23 MB, maxSize=193.38 MB, heapSize=146.02 KB, minSize=183.71 MB, minFactor=0.95, multiSize=91.85 MB, multiFactor=0.5, singleSize=45.93 MB, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2019-05-06 03:57:32,246 INFO  [StoreOpener-73bd4e47a5e60dbd74906c2ec81d72fb-1] compactions.CompactionConfiguration: size [128 MB, 8.00 EB, 8.00 EB); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2019-05-06 03:57:32,252 INFO  [StoreOpener-73bd4e47a5e60dbd74906c2ec81d72fb-1] regionserver.HStore: Store=info,  memstore type=DefaultMemStore, storagePolicy=HOT, verifyBulkLoads=false, parallelPutCountPrintThreshold=50, encoding=NONE, compression=NONE
+2019-05-06 03:57:32,310 INFO  [RS_OPEN_PRIORITY_REGION-regionserver/hbase-docker:16020-0] regionserver.HRegion: Opened 73bd4e47a5e60dbd74906c2ec81d72fb; next sequenceid=2
+2019-05-06 03:57:32,331 INFO  [PostOpenDeployTasks:73bd4e47a5e60dbd74906c2ec81d72fb] regionserver.HRegionServer: Post open deploy tasks for hbase:namespace,,1557115051022.73bd4e47a5e60dbd74906c2ec81d72fb.
+2019-05-06 03:57:32,355 INFO  [PEWorker-14] assignment.RegionStateStore: pid=4 updating hbase:meta row=73bd4e47a5e60dbd74906c2ec81d72fb, regionState=OPEN, openSeqNum=2, regionLocation=hbase-docker,16020,1557115037105
+2019-05-06 03:57:32,378 INFO  [PEWorker-14] procedure2.ProcedureExecutor: Finished subprocedure pid=4, resume processing parent pid=3, state=RUNNABLE:CREATE_TABLE_UPDATE_DESC_CACHE, locked=true; CreateTableProcedure table=hbase:namespace
+2019-05-06 03:57:32,380 INFO  [PEWorker-14] procedure2.ProcedureExecutor: Finished pid=4, ppid=3, state=SUCCESS; AssignProcedure table=hbase:namespace, region=73bd4e47a5e60dbd74906c2ec81d72fb, target=hbase-docker,16020,1557115037105 in 634msec, unfinishedSiblingCount=0
+2019-05-06 03:57:32,494 INFO  [PEWorker-15] hbase.MetaTableAccessor: Updated tableName=hbase:namespace, state=ENABLED in hbase:meta
+2019-05-06 03:57:32,508 INFO  [PEWorker-15] procedure2.ProcedureExecutor: Finished pid=3, state=SUCCESS; CreateTableProcedure table=hbase:namespace in 1.4630sec
+2019-05-06 03:57:32,912 INFO  [PEWorker-16] procedure2.ProcedureExecutor: Finished pid=5, state=SUCCESS; CreateNamespaceProcedure, namespace=default in 241msec
+2019-05-06 03:57:33,063 INFO  [PEWorker-6] procedure2.ProcedureExecutor: Finished pid=6, state=SUCCESS; CreateNamespaceProcedure, namespace=hbase in 137msec
+2019-05-06 03:57:33,088 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x16a8b49c57f0000 type:create cxid:0x61 zxid:0x2e txntype:-1 reqpath:n/a Error Path:/hbase/namespace/default Error:KeeperErrorCode = NodeExists for /hbase/namespace/default
+2019-05-06 03:57:33,094 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x16a8b49c57f0000 type:create cxid:0x64 zxid:0x30 txntype:-1 reqpath:n/a Error Path:/hbase/namespace/hbase Error:KeeperErrorCode = NodeExists for /hbase/namespace/hbase
+2019-05-06 03:57:33,104 INFO  [master/hbase-docker:16000:becomeActiveMaster] master.HMaster: Master has completed initialization 15.421sec
+2019-05-06 03:57:33,109 INFO  [master/hbase-docker:16000:becomeActiveMaster] quotas.MasterQuotaManager: Quota support disabled
+2019-05-06 03:57:33,110 INFO  [master/hbase-docker:16000:becomeActiveMaster] zookeeper.ZKWatcher: not a secure deployment, proceeding
+2019-05-06 03:57:33,129 INFO  [master/hbase-docker:16000:becomeActiveMaster] balancer.RegionLocationFinder: Refreshing block distribution cache for 2 regions (Can take a while on big cluster)
+2019-05-06 03:57:33,147 INFO  [master/hbase-docker:16000:becomeActiveMaster] balancer.RegionLocationFinder: Finished refreshing block distribution cache for 2 regions
+2019-05-06 03:58:19,740 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x16a8b49c57f0003
+2019-05-06 03:58:19,746 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x0cf22c1a] zookeeper.ZooKeeper: Session: 0x16a8b49c57f0003 closed
+2019-05-06 03:58:19,747 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x0cf22c1a-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x16a8b49c57f0003
+2019-05-06 03:58:19,754 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.17.0.2:55296 which had sessionid 0x16a8b49c57f0003
+2019-05-06 03:58:30,535 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x16a8b49c57f0002
+2019-05-06 03:58:30,539 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.17.0.2:55294 which had sessionid 0x16a8b49c57f0002
+2019-05-06 03:58:30,539 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x1ca90965] zookeeper.ZooKeeper: Session: 0x16a8b49c57f0002 closed
+2019-05-06 03:58:30,540 INFO  [ReadOnlyZKClient-hbase-docker:2181@0x1ca90965-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x16a8b49c57f0002
+2019-05-06 04:02:16,864 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=146.02 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=0, accesses=0, hits=0, hitRatio=0, cachingAccesses=0, cachingHits=0, cachingHitsRatio=0,evictions=29, evicted=0, evictedPerRun=0.0
+2019-05-06 04:02:41,754 INFO  [regionserver/hbase-docker:16020.Chore.1] regionserver.HRegionServer: MemstoreFlusherChore requesting flush of hbase:namespace,,1557115051022.73bd4e47a5e60dbd74906c2ec81d72fb. because info has an old edit so flush to free WALs after random delay 103773 ms
+2019-05-06 04:02:41,755 INFO  [regionserver/hbase-docker:16020.Chore.1] regionserver.HRegionServer: MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 229007 ms
+2019-05-06 04:04:25,549 INFO  [MemStoreFlusher.1] regionserver.HRegion: Flushing 1/1 column families, dataSize=78 B heapSize=440 B
+2019-05-06 04:04:26,128 INFO  [MemStoreFlusher.1] regionserver.DefaultStoreFlusher: Flushed memstore data size=78 B at sequenceid=6 (bloomFilter=true), to=file:/data/hbase/data/hbase/namespace/73bd4e47a5e60dbd74906c2ec81d72fb/.tmp/info/5d0358f53c0b49c1a8f3da09a91898d7
+2019-05-06 04:04:26,443 INFO  [MemStoreFlusher.1] regionserver.HStore: Added file:/data/hbase/data/hbase/namespace/73bd4e47a5e60dbd74906c2ec81d72fb/info/5d0358f53c0b49c1a8f3da09a91898d7, entries=2, sequenceid=6, filesize=4.8 K
+2019-05-06 04:04:26,480 INFO  [MemStoreFlusher.1] regionserver.HRegion: Finished flush of dataSize ~78 B/78, heapSize ~448 B/448, currentSize=0 B/0 for 73bd4e47a5e60dbd74906c2ec81d72fb in 932ms, sequenceid=6, compaction requested=false
+2019-05-06 04:06:30,771 INFO  [MemStoreFlusher.1] regionserver.HRegion: Flushing 3/3 column families, dataSize=1.23 KB heapSize=2.73 KB
+2019-05-06 04:06:31,143 INFO  [MemStoreFlusher.1] regionserver.DefaultStoreFlusher: Flushed memstore data size=1.14 KB at sequenceid=9 (bloomFilter=false), to=file:/data/hbase/data/hbase/meta/1588230740/.tmp/info/7567aa45509843e395ffab69cef8db61
+2019-05-06 04:06:31,293 INFO  [MemStoreFlusher.1] regionserver.DefaultStoreFlusher: Flushed memstore data size=94 B at sequenceid=9 (bloomFilter=false), to=file:/data/hbase/data/hbase/meta/1588230740/.tmp/table/3a86873609db4fcfa17ec139d121a129
+2019-05-06 04:06:31,374 INFO  [MemStoreFlusher.1] regionserver.HStore: Added file:/data/hbase/data/hbase/meta/1588230740/info/7567aa45509843e395ffab69cef8db61, entries=10, sequenceid=9, filesize=5.8 K
+2019-05-06 04:06:31,415 INFO  [MemStoreFlusher.1] regionserver.HStore: Added file:/data/hbase/data/hbase/meta/1588230740/table/3a86873609db4fcfa17ec139d121a129, entries=2, sequenceid=9, filesize=4.6 K
+2019-05-06 04:06:31,428 INFO  [MemStoreFlusher.1] regionserver.HRegion: Finished flush of dataSize ~1.23 KB/1264, heapSize ~2.54 KB/2600, currentSize=0 B/0 for 1588230740 in 658ms, sequenceid=9, compaction requested=false
+2019-05-06 04:07:16,505 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=146.02 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=0, accesses=0, hits=0, hitRatio=0, cachingAccesses=0, cachingHits=0, cachingHitsRatio=0,evictions=59, evicted=0, evictedPerRun=0.0
+2019-05-06 04:12:16,148 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=2, hits=0, hitRatio=0, cachingAccesses=2, cachingHits=0, cachingHitsRatio=0,evictions=89, evicted=0, evictedPerRun=0.0
+2019-05-06 04:12:50,728 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=2
+2019-05-06 04:12:50,751 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 1, since no active procedures
+2019-05-06 04:12:50,756 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000001.log to file:/data/hbase/oldWALs/pv2-00000000000000000001.log
+2019-05-06 04:17:15,790 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=4, hits=2, hitRatio=50.00%, , cachingAccesses=4, cachingHits=2, cachingHitsRatio=50.00%, evictions=119, evicted=0, evictedPerRun=0.0
+2019-05-06 04:22:15,439 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=6, hits=4, hitRatio=66.67%, , cachingAccesses=6, cachingHits=4, cachingHitsRatio=66.67%, evictions=149, evicted=0, evictedPerRun=0.0
+2019-05-06 04:27:15,092 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=8, hits=6, hitRatio=75.00%, , cachingAccesses=8, cachingHits=6, cachingHitsRatio=75.00%, evictions=179, evicted=0, evictedPerRun=0.0
+2019-05-06 04:32:14,745 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=10, hits=8, hitRatio=80.00%, , cachingAccesses=10, cachingHits=8, cachingHitsRatio=80.00%, evictions=209, evicted=0, evictedPerRun=0.0
+2019-05-06 04:37:14,378 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=12, hits=10, hitRatio=83.33%, , cachingAccesses=12, cachingHits=10, cachingHitsRatio=83.33%, evictions=239, evicted=0, evictedPerRun=0.0
+2019-05-06 04:42:14,020 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=14, hits=12, hitRatio=85.71%, , cachingAccesses=14, cachingHits=12, cachingHitsRatio=85.71%, evictions=269, evicted=0, evictedPerRun=0.0
+2019-05-06 04:47:13,661 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=16, hits=14, hitRatio=87.50%, , cachingAccesses=16, cachingHits=14, cachingHitsRatio=87.50%, evictions=299, evicted=0, evictedPerRun=0.0
+2019-05-06 04:52:13,306 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=18, hits=16, hitRatio=88.89%, , cachingAccesses=18, cachingHits=16, cachingHitsRatio=88.89%, evictions=329, evicted=0, evictedPerRun=0.0
+2019-05-06 04:57:10,853 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 04:57:12,956 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=20, hits=18, hitRatio=90.00%, , cachingAccesses=20, cachingHits=18, cachingHitsRatio=90.00%, evictions=359, evicted=0, evictedPerRun=0.0
+2019-05-06 04:57:27,576 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557115044572 with entries=5, filesize=1.07 KB; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557118647432
+2019-05-06 04:57:27,580 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557115044572 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557115044572
+2019-05-06 04:57:27,647 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557115045097.meta with entries=8, filesize=2.18 KB; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557118647613.meta
+2019-05-06 04:57:27,648 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557115045097.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557115045097.meta
+2019-05-06 05:02:12,601 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=22, hits=20, hitRatio=90.91%, , cachingAccesses=22, cachingHits=20, cachingHitsRatio=90.91%, evictions=389, evicted=0, evictedPerRun=0.0
+2019-05-06 05:06:01,692 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 05:07:12,245 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=24, hits=22, hitRatio=91.67%, , cachingAccesses=24, cachingHits=22, cachingHitsRatio=91.67%, evictions=419, evicted=0, evictedPerRun=0.0
+2019-05-06 05:12:11,895 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=26, hits=24, hitRatio=92.31%, , cachingAccesses=26, cachingHits=24, cachingHitsRatio=92.31%, evictions=449, evicted=0, evictedPerRun=0.0
+2019-05-06 05:12:46,655 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=3
+2019-05-06 05:12:46,680 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 2, since no active procedures
+2019-05-06 05:12:46,680 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000002.log to file:/data/hbase/oldWALs/pv2-00000000000000000002.log
+2019-05-06 05:17:11,535 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=28, hits=26, hitRatio=92.86%, , cachingAccesses=28, cachingHits=26, cachingHitsRatio=92.86%, evictions=479, evicted=0, evictedPerRun=0.0
+2019-05-06 05:22:11,176 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=30, hits=28, hitRatio=93.33%, , cachingAccesses=30, cachingHits=28, cachingHitsRatio=93.33%, evictions=509, evicted=0, evictedPerRun=0.0
+2019-05-06 05:27:10,821 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=32, hits=30, hitRatio=93.75%, , cachingAccesses=32, cachingHits=30, cachingHitsRatio=93.75%, evictions=539, evicted=0, evictedPerRun=0.0
+2019-05-06 05:32:10,467 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=34, hits=32, hitRatio=94.12%, , cachingAccesses=34, cachingHits=32, cachingHitsRatio=94.12%, evictions=569, evicted=0, evictedPerRun=0.0
+2019-05-06 05:37:10,109 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=36, hits=34, hitRatio=94.44%, , cachingAccesses=36, cachingHits=34, cachingHitsRatio=94.44%, evictions=599, evicted=0, evictedPerRun=0.0
+2019-05-06 05:42:09,755 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=38, hits=36, hitRatio=94.74%, , cachingAccesses=38, cachingHits=36, cachingHitsRatio=94.74%, evictions=629, evicted=0, evictedPerRun=0.0
+2019-05-06 05:47:09,402 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=40, hits=38, hitRatio=95.00%, , cachingAccesses=40, cachingHits=38, cachingHitsRatio=95.00%, evictions=659, evicted=0, evictedPerRun=0.0
+2019-05-06 05:52:09,045 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=42, hits=40, hitRatio=95.24%, , cachingAccesses=42, cachingHits=40, cachingHitsRatio=95.24%, evictions=689, evicted=0, evictedPerRun=0.0
+2019-05-06 05:57:06,591 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 05:57:08,690 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=44, hits=42, hitRatio=95.45%, , cachingAccesses=44, cachingHits=42, cachingHitsRatio=95.45%, evictions=719, evicted=0, evictedPerRun=0.0
+2019-05-06 05:57:33,949 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557118647432 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557122253845
+2019-05-06 05:57:33,950 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557118647432 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557118647432
+2019-05-06 05:57:34,015 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557118647613.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557122253982.meta
+2019-05-06 05:57:34,015 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557118647613.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557118647613.meta
+2019-05-06 06:02:08,335 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=46, hits=44, hitRatio=95.65%, , cachingAccesses=46, cachingHits=44, cachingHitsRatio=95.65%, evictions=749, evicted=0, evictedPerRun=0.0
+2019-05-06 06:07:07,980 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=48, hits=46, hitRatio=95.83%, , cachingAccesses=48, cachingHits=46, cachingHitsRatio=95.83%, evictions=779, evicted=0, evictedPerRun=0.0
+2019-05-06 06:11:32,892 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 06:12:07,625 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=50, hits=48, hitRatio=96.00%, , cachingAccesses=50, cachingHits=48, cachingHitsRatio=96.00%, evictions=809, evicted=0, evictedPerRun=0.0
+2019-05-06 06:12:42,554 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=4
+2019-05-06 06:12:42,570 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 3, since no active procedures
+2019-05-06 06:12:42,570 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000003.log to file:/data/hbase/oldWALs/pv2-00000000000000000003.log
+2019-05-06 06:17:07,288 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=52, hits=50, hitRatio=96.15%, , cachingAccesses=52, cachingHits=50, cachingHitsRatio=96.15%, evictions=839, evicted=0, evictedPerRun=0.0
+2019-05-06 06:18:46,385 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 06:22:06,912 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=54, hits=52, hitRatio=96.30%, , cachingAccesses=54, cachingHits=52, cachingHitsRatio=96.30%, evictions=869, evicted=0, evictedPerRun=0.0
+2019-05-06 06:27:06,555 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=56, hits=54, hitRatio=96.43%, , cachingAccesses=56, cachingHits=54, cachingHitsRatio=96.43%, evictions=899, evicted=0, evictedPerRun=0.0
+2019-05-06 06:32:06,202 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=58, hits=56, hitRatio=96.55%, , cachingAccesses=58, cachingHits=56, cachingHitsRatio=96.55%, evictions=929, evicted=0, evictedPerRun=0.0
+2019-05-06 06:37:05,850 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=60, hits=58, hitRatio=96.67%, , cachingAccesses=60, cachingHits=58, cachingHitsRatio=96.67%, evictions=959, evicted=0, evictedPerRun=0.0
+2019-05-06 06:42:05,495 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=62, hits=60, hitRatio=96.77%, , cachingAccesses=62, cachingHits=60, cachingHitsRatio=96.77%, evictions=989, evicted=0, evictedPerRun=0.0
+2019-05-06 06:47:05,141 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=64, hits=62, hitRatio=96.88%, , cachingAccesses=64, cachingHits=62, cachingHitsRatio=96.88%, evictions=1019, evicted=0, evictedPerRun=0.0
+2019-05-06 06:52:04,786 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=66, hits=64, hitRatio=96.97%, , cachingAccesses=66, cachingHits=64, cachingHitsRatio=96.97%, evictions=1049, evicted=0, evictedPerRun=0.0
+2019-05-06 06:57:02,328 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 06:57:04,428 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=68, hits=66, hitRatio=97.06%, , cachingAccesses=68, cachingHits=66, cachingHitsRatio=97.06%, evictions=1079, evicted=0, evictedPerRun=0.0
+2019-05-06 06:57:40,312 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557122253845 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557125860120
+2019-05-06 06:57:40,314 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557122253845 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557122253845
+2019-05-06 06:57:40,404 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557122253982.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557125860357.meta
+2019-05-06 06:57:40,405 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557122253982.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557122253982.meta
+2019-05-06 07:02:04,075 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=70, hits=68, hitRatio=97.14%, , cachingAccesses=70, cachingHits=68, cachingHitsRatio=97.14%, evictions=1109, evicted=0, evictedPerRun=0.0
+2019-05-06 07:07:03,719 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=72, hits=70, hitRatio=97.22%, , cachingAccesses=72, cachingHits=70, cachingHitsRatio=97.22%, evictions=1139, evicted=0, evictedPerRun=0.0
+2019-05-06 07:12:03,367 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=74, hits=72, hitRatio=97.30%, , cachingAccesses=74, cachingHits=72, cachingHitsRatio=97.30%, evictions=1169, evicted=0, evictedPerRun=0.0
+2019-05-06 07:12:32,318 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 07:12:38,427 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=5
+2019-05-06 07:12:38,455 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 4, since no active procedures
+2019-05-06 07:12:38,455 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000004.log to file:/data/hbase/oldWALs/pv2-00000000000000000004.log
+2019-05-06 07:17:03,010 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=76, hits=74, hitRatio=97.37%, , cachingAccesses=76, cachingHits=74, cachingHitsRatio=97.37%, evictions=1199, evicted=0, evictedPerRun=0.0
+2019-05-06 07:22:02,654 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=78, hits=76, hitRatio=97.44%, , cachingAccesses=78, cachingHits=76, cachingHitsRatio=97.44%, evictions=1229, evicted=0, evictedPerRun=0.0
+2019-05-06 07:27:02,298 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=80, hits=78, hitRatio=97.50%, , cachingAccesses=80, cachingHits=78, cachingHitsRatio=97.50%, evictions=1259, evicted=0, evictedPerRun=0.0
+2019-05-06 07:32:01,945 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=82, hits=80, hitRatio=97.56%, , cachingAccesses=82, cachingHits=80, cachingHitsRatio=97.56%, evictions=1289, evicted=0, evictedPerRun=0.0
+2019-05-06 07:37:01,588 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=84, hits=82, hitRatio=97.62%, , cachingAccesses=84, cachingHits=82, cachingHitsRatio=97.62%, evictions=1319, evicted=0, evictedPerRun=0.0
+2019-05-06 07:42:01,238 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=86, hits=84, hitRatio=97.67%, , cachingAccesses=86, cachingHits=84, cachingHitsRatio=97.67%, evictions=1349, evicted=0, evictedPerRun=0.0
+2019-05-06 07:47:00,877 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=88, hits=86, hitRatio=97.73%, , cachingAccesses=88, cachingHits=86, cachingHitsRatio=97.73%, evictions=1379, evicted=0, evictedPerRun=0.0
+2019-05-06 07:52:00,526 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=90, hits=88, hitRatio=97.78%, , cachingAccesses=90, cachingHits=88, cachingHitsRatio=97.78%, evictions=1409, evicted=0, evictedPerRun=0.0
+2019-05-06 07:56:58,067 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 07:57:00,165 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=92, hits=90, hitRatio=97.83%, , cachingAccesses=92, cachingHits=90, cachingHitsRatio=97.83%, evictions=1439, evicted=0, evictedPerRun=0.0
+2019-05-06 07:57:46,697 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557125860120 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557129466537
+2019-05-06 07:57:46,697 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557125860120 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557125860120
+2019-05-06 07:57:46,758 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557125860357.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557129466731.meta
+2019-05-06 07:57:46,758 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557125860357.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557125860357.meta
+2019-05-06 08:01:59,810 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=94, hits=92, hitRatio=97.87%, , cachingAccesses=94, cachingHits=92, cachingHitsRatio=97.87%, evictions=1469, evicted=0, evictedPerRun=0.0
+2019-05-06 08:06:59,455 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=96, hits=94, hitRatio=97.92%, , cachingAccesses=96, cachingHits=94, cachingHitsRatio=97.92%, evictions=1499, evicted=0, evictedPerRun=0.0
+2019-05-06 08:11:59,100 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=98, hits=96, hitRatio=97.96%, , cachingAccesses=98, cachingHits=96, cachingHitsRatio=97.96%, evictions=1529, evicted=0, evictedPerRun=0.0
+2019-05-06 08:12:34,346 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=6
+2019-05-06 08:12:34,368 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 5, since no active procedures
+2019-05-06 08:12:34,368 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000005.log to file:/data/hbase/oldWALs/pv2-00000000000000000005.log
+2019-05-06 08:16:58,745 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=100, hits=98, hitRatio=98.00%, , cachingAccesses=100, cachingHits=98, cachingHitsRatio=98.00%, evictions=1559, evicted=0, evictedPerRun=0.0
+2019-05-06 08:21:58,392 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=102, hits=100, hitRatio=98.04%, , cachingAccesses=102, cachingHits=100, cachingHitsRatio=98.04%, evictions=1589, evicted=0, evictedPerRun=0.0
+2019-05-06 08:26:58,036 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=104, hits=102, hitRatio=98.08%, , cachingAccesses=104, cachingHits=102, cachingHitsRatio=98.08%, evictions=1619, evicted=0, evictedPerRun=0.0
+2019-05-06 08:31:57,679 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=106, hits=104, hitRatio=98.11%, , cachingAccesses=106, cachingHits=104, cachingHitsRatio=98.11%, evictions=1649, evicted=0, evictedPerRun=0.0
+2019-05-06 08:36:57,323 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=108, hits=106, hitRatio=98.15%, , cachingAccesses=108, cachingHits=106, cachingHitsRatio=98.15%, evictions=1679, evicted=0, evictedPerRun=0.0
+2019-05-06 08:41:56,970 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=110, hits=108, hitRatio=98.18%, , cachingAccesses=110, cachingHits=108, cachingHitsRatio=98.18%, evictions=1709, evicted=0, evictedPerRun=0.0
+2019-05-06 08:46:56,612 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=112, hits=110, hitRatio=98.21%, , cachingAccesses=112, cachingHits=110, cachingHitsRatio=98.21%, evictions=1739, evicted=0, evictedPerRun=0.0
+2019-05-06 08:51:56,262 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=114, hits=112, hitRatio=98.25%, , cachingAccesses=114, cachingHits=112, cachingHitsRatio=98.25%, evictions=1769, evicted=0, evictedPerRun=0.0
+2019-05-06 08:56:53,807 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 08:56:55,905 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=116, hits=114, hitRatio=98.28%, , cachingAccesses=116, cachingHits=114, cachingHitsRatio=98.28%, evictions=1799, evicted=0, evictedPerRun=0.0
+2019-05-06 08:57:53,149 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557129466537 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557133072958
+2019-05-06 08:57:53,150 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557129466537 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557129466537
+2019-05-06 08:57:53,221 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557129466731.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557133073198.meta
+2019-05-06 08:57:53,221 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557129466731.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557129466731.meta
+2019-05-06 09:00:33,468 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 09:00:33,507 INFO  [JvmPauseMonitor] util.JvmPauseMonitor: Detected pause in JVM or host machine (eg GC): pause of approximately 1003ms
+No GCs detected
+2019-05-06 09:01:55,553 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=118, hits=116, hitRatio=98.31%, , cachingAccesses=118, cachingHits=116, cachingHitsRatio=98.31%, evictions=1829, evicted=0, evictedPerRun=0.0
+2019-05-06 09:05:25,070 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 09:06:55,196 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=120, hits=118, hitRatio=98.33%, , cachingAccesses=120, cachingHits=118, cachingHitsRatio=98.33%, evictions=1859, evicted=0, evictedPerRun=0.0
+2019-05-06 09:11:54,841 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=122, hits=120, hitRatio=98.36%, , cachingAccesses=122, cachingHits=120, cachingHitsRatio=98.36%, evictions=1889, evicted=0, evictedPerRun=0.0
+2019-05-06 09:12:30,193 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=7
+2019-05-06 09:12:30,210 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 6, since no active procedures
+2019-05-06 09:12:30,210 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000006.log to file:/data/hbase/oldWALs/pv2-00000000000000000006.log
+2019-05-06 09:12:37,230 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 09:16:54,487 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=124, hits=122, hitRatio=98.39%, , cachingAccesses=124, cachingHits=122, cachingHitsRatio=98.39%, evictions=1919, evicted=0, evictedPerRun=0.0
+2019-05-06 09:21:54,132 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=126, hits=124, hitRatio=98.41%, , cachingAccesses=126, cachingHits=124, cachingHitsRatio=98.41%, evictions=1949, evicted=0, evictedPerRun=0.0
+2019-05-06 09:26:53,777 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=128, hits=126, hitRatio=98.44%, , cachingAccesses=128, cachingHits=126, cachingHitsRatio=98.44%, evictions=1979, evicted=0, evictedPerRun=0.0
+2019-05-06 09:31:53,424 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=130, hits=128, hitRatio=98.46%, , cachingAccesses=130, cachingHits=128, cachingHitsRatio=98.46%, evictions=2009, evicted=0, evictedPerRun=0.0
+2019-05-06 09:36:53,077 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=132, hits=130, hitRatio=98.48%, , cachingAccesses=132, cachingHits=130, cachingHitsRatio=98.48%, evictions=2039, evicted=0, evictedPerRun=0.0
+2019-05-06 09:41:52,713 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=134, hits=132, hitRatio=98.51%, , cachingAccesses=134, cachingHits=132, cachingHitsRatio=98.51%, evictions=2069, evicted=0, evictedPerRun=0.0
+2019-05-06 09:46:52,359 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=136, hits=134, hitRatio=98.53%, , cachingAccesses=136, cachingHits=134, cachingHitsRatio=98.53%, evictions=2099, evicted=0, evictedPerRun=0.0
+2019-05-06 09:51:52,001 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=138, hits=136, hitRatio=98.55%, , cachingAccesses=138, cachingHits=136, cachingHitsRatio=98.55%, evictions=2129, evicted=0, evictedPerRun=0.0
+2019-05-06 09:56:49,551 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 09:56:51,649 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=140, hits=138, hitRatio=98.57%, , cachingAccesses=140, cachingHits=138, cachingHitsRatio=98.57%, evictions=2159, evicted=0, evictedPerRun=0.0
+2019-05-06 09:57:59,728 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557133072958 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557136679458
+2019-05-06 09:57:59,733 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557133072958 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557133072958
+2019-05-06 09:57:59,787 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557133073198.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557136679759.meta
+2019-05-06 09:57:59,788 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557133073198.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557133073198.meta
+2019-05-06 10:01:51,297 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=142, hits=140, hitRatio=98.59%, , cachingAccesses=142, cachingHits=140, cachingHitsRatio=98.59%, evictions=2189, evicted=0, evictedPerRun=0.0
+2019-05-06 10:06:50,938 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=144, hits=142, hitRatio=98.61%, , cachingAccesses=144, cachingHits=142, cachingHitsRatio=98.61%, evictions=2219, evicted=0, evictedPerRun=0.0
+2019-05-06 10:11:50,587 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=146, hits=144, hitRatio=98.63%, , cachingAccesses=146, cachingHits=144, cachingHitsRatio=98.63%, evictions=2249, evicted=0, evictedPerRun=0.0
+2019-05-06 10:12:26,097 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=8
+2019-05-06 10:12:26,110 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 7, since no active procedures
+2019-05-06 10:12:26,110 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000007.log to file:/data/hbase/oldWALs/pv2-00000000000000000007.log
+2019-05-06 10:16:50,229 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=148, hits=146, hitRatio=98.65%, , cachingAccesses=148, cachingHits=146, cachingHitsRatio=98.65%, evictions=2279, evicted=0, evictedPerRun=0.0
+2019-05-06 10:21:49,875 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=150, hits=148, hitRatio=98.67%, , cachingAccesses=150, cachingHits=148, cachingHitsRatio=98.67%, evictions=2309, evicted=0, evictedPerRun=0.0
+2019-05-06 10:26:49,519 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=152, hits=150, hitRatio=98.68%, , cachingAccesses=152, cachingHits=150, cachingHitsRatio=98.68%, evictions=2339, evicted=0, evictedPerRun=0.0
+2019-05-06 10:31:49,167 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=154, hits=152, hitRatio=98.70%, , cachingAccesses=154, cachingHits=152, cachingHitsRatio=98.70%, evictions=2369, evicted=0, evictedPerRun=0.0
+2019-05-06 10:36:48,810 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=156, hits=154, hitRatio=98.72%, , cachingAccesses=156, cachingHits=154, cachingHitsRatio=98.72%, evictions=2399, evicted=0, evictedPerRun=0.0
+2019-05-06 10:41:48,454 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=158, hits=156, hitRatio=98.73%, , cachingAccesses=158, cachingHits=156, cachingHitsRatio=98.73%, evictions=2429, evicted=0, evictedPerRun=0.0
+2019-05-06 10:46:48,104 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=160, hits=158, hitRatio=98.75%, , cachingAccesses=160, cachingHits=158, cachingHitsRatio=98.75%, evictions=2459, evicted=0, evictedPerRun=0.0
+2019-05-06 10:51:47,746 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=162, hits=160, hitRatio=98.77%, , cachingAccesses=162, cachingHits=160, cachingHitsRatio=98.77%, evictions=2489, evicted=0, evictedPerRun=0.0
+2019-05-06 10:56:45,296 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 10:56:47,397 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=164, hits=162, hitRatio=98.78%, , cachingAccesses=164, cachingHits=162, cachingHitsRatio=98.78%, evictions=2519, evicted=0, evictedPerRun=0.0
+2019-05-06 10:58:06,283 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557136679458 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557140286123
+2019-05-06 10:58:06,284 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557136679458 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557136679458
+2019-05-06 10:58:06,345 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557136679759.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557140286318.meta
+2019-05-06 10:58:06,345 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557136679759.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557136679759.meta
+2019-05-06 11:01:47,042 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=166, hits=164, hitRatio=98.80%, , cachingAccesses=166, cachingHits=164, cachingHitsRatio=98.80%, evictions=2549, evicted=0, evictedPerRun=0.0
+2019-05-06 11:06:46,687 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=168, hits=166, hitRatio=98.81%, , cachingAccesses=168, cachingHits=166, cachingHitsRatio=98.81%, evictions=2579, evicted=0, evictedPerRun=0.0
+2019-05-06 11:11:46,326 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=170, hits=168, hitRatio=98.82%, , cachingAccesses=170, cachingHits=168, cachingHitsRatio=98.82%, evictions=2609, evicted=0, evictedPerRun=0.0
+2019-05-06 11:12:21,999 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=9
+2019-05-06 11:12:22,020 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 8, since no active procedures
+2019-05-06 11:12:22,021 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000008.log to file:/data/hbase/oldWALs/pv2-00000000000000000008.log
+2019-05-06 11:16:45,973 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=172, hits=170, hitRatio=98.84%, , cachingAccesses=172, cachingHits=170, cachingHitsRatio=98.84%, evictions=2639, evicted=0, evictedPerRun=0.0
+2019-05-06 11:21:45,615 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=174, hits=172, hitRatio=98.85%, , cachingAccesses=174, cachingHits=172, cachingHitsRatio=98.85%, evictions=2669, evicted=0, evictedPerRun=0.0
+2019-05-06 11:26:45,265 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=176, hits=174, hitRatio=98.86%, , cachingAccesses=176, cachingHits=174, cachingHitsRatio=98.86%, evictions=2699, evicted=0, evictedPerRun=0.0
+2019-05-06 11:31:44,910 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=178, hits=176, hitRatio=98.88%, , cachingAccesses=178, cachingHits=176, cachingHitsRatio=98.88%, evictions=2729, evicted=0, evictedPerRun=0.0
+2019-05-06 11:36:44,556 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=180, hits=178, hitRatio=98.89%, , cachingAccesses=180, cachingHits=178, cachingHitsRatio=98.89%, evictions=2759, evicted=0, evictedPerRun=0.0
+2019-05-06 11:41:44,203 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=182, hits=180, hitRatio=98.90%, , cachingAccesses=182, cachingHits=180, cachingHitsRatio=98.90%, evictions=2789, evicted=0, evictedPerRun=0.0
+2019-05-06 11:46:43,844 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=184, hits=182, hitRatio=98.91%, , cachingAccesses=184, cachingHits=182, cachingHitsRatio=98.91%, evictions=2819, evicted=0, evictedPerRun=0.0
+2019-05-06 11:51:43,493 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=186, hits=184, hitRatio=98.92%, , cachingAccesses=186, cachingHits=184, cachingHitsRatio=98.92%, evictions=2849, evicted=0, evictedPerRun=0.0
+2019-05-06 11:56:41,036 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 11:56:43,134 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=188, hits=186, hitRatio=98.94%, , cachingAccesses=188, cachingHits=186, cachingHitsRatio=98.94%, evictions=2879, evicted=0, evictedPerRun=0.0
+2019-05-06 11:58:12,659 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557140286123 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557143892528
+2019-05-06 11:58:12,660 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557140286123 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557140286123
+2019-05-06 11:58:12,724 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557140286318.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557143892694.meta
+2019-05-06 11:58:12,724 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557140286318.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557140286318.meta
+2019-05-06 12:01:42,782 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=190, hits=188, hitRatio=98.95%, , cachingAccesses=190, cachingHits=188, cachingHitsRatio=98.95%, evictions=2909, evicted=0, evictedPerRun=0.0
+2019-05-06 12:06:42,428 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=192, hits=190, hitRatio=98.96%, , cachingAccesses=192, cachingHits=190, cachingHitsRatio=98.96%, evictions=2939, evicted=0, evictedPerRun=0.0
+2019-05-06 12:11:42,071 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=194, hits=192, hitRatio=98.97%, , cachingAccesses=194, cachingHits=192, cachingHitsRatio=98.97%, evictions=2969, evicted=0, evictedPerRun=0.0
+2019-05-06 12:12:17,896 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=10
+2019-05-06 12:12:17,917 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 9, since no active procedures
+2019-05-06 12:12:17,917 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000009.log to file:/data/hbase/oldWALs/pv2-00000000000000000009.log
+2019-05-06 12:16:41,714 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=196, hits=194, hitRatio=98.98%, , cachingAccesses=196, cachingHits=194, cachingHitsRatio=98.98%, evictions=2999, evicted=0, evictedPerRun=0.0
+2019-05-06 12:21:41,361 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=198, hits=196, hitRatio=98.99%, , cachingAccesses=198, cachingHits=196, cachingHitsRatio=98.99%, evictions=3029, evicted=0, evictedPerRun=0.0
+2019-05-06 12:26:41,010 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=200, hits=198, hitRatio=99.00%, , cachingAccesses=200, cachingHits=198, cachingHitsRatio=99.00%, evictions=3059, evicted=0, evictedPerRun=0.0
+2019-05-06 12:26:53,990 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 12:31:40,652 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=202, hits=200, hitRatio=99.01%, , cachingAccesses=202, cachingHits=200, cachingHitsRatio=99.01%, evictions=3089, evicted=0, evictedPerRun=0.0
+2019-05-06 12:36:40,298 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=204, hits=202, hitRatio=99.02%, , cachingAccesses=204, cachingHits=202, cachingHitsRatio=99.02%, evictions=3119, evicted=0, evictedPerRun=0.0
+2019-05-06 12:41:39,946 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=206, hits=204, hitRatio=99.03%, , cachingAccesses=206, cachingHits=204, cachingHitsRatio=99.03%, evictions=3149, evicted=0, evictedPerRun=0.0
+2019-05-06 12:46:39,586 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=208, hits=206, hitRatio=99.04%, , cachingAccesses=208, cachingHits=206, cachingHitsRatio=99.04%, evictions=3179, evicted=0, evictedPerRun=0.0
+2019-05-06 12:51:39,236 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=210, hits=208, hitRatio=99.05%, , cachingAccesses=210, cachingHits=208, cachingHitsRatio=99.05%, evictions=3209, evicted=0, evictedPerRun=0.0
+2019-05-06 12:55:49,687 INFO  [JvmPauseMonitor] util.JvmPauseMonitor: Detected pause in JVM or host machine (eg GC): pause of approximately 1017ms
+No GCs detected
+2019-05-06 12:56:36,814 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 12:56:38,878 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=212, hits=210, hitRatio=99.06%, , cachingAccesses=212, cachingHits=210, cachingHitsRatio=99.06%, evictions=3239, evicted=0, evictedPerRun=0.0
+2019-05-06 12:58:19,659 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557143892528 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557147499529
+2019-05-06 12:58:19,662 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557143892528 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557143892528
+2019-05-06 12:58:19,715 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557143892694.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557147499690.meta
+2019-05-06 12:58:19,716 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557143892694.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557143892694.meta
+2019-05-06 13:01:38,528 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=214, hits=212, hitRatio=99.07%, , cachingAccesses=214, cachingHits=212, cachingHitsRatio=99.07%, evictions=3269, evicted=0, evictedPerRun=0.0
+2019-05-06 13:06:38,169 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=216, hits=214, hitRatio=99.07%, , cachingAccesses=216, cachingHits=214, cachingHitsRatio=99.07%, evictions=3299, evicted=0, evictedPerRun=0.0
+2019-05-06 13:11:37,812 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=218, hits=216, hitRatio=99.08%, , cachingAccesses=218, cachingHits=216, cachingHitsRatio=99.08%, evictions=3329, evicted=0, evictedPerRun=0.0
+2019-05-06 13:12:13,795 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=11
+2019-05-06 13:12:13,830 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 10, since no active procedures
+2019-05-06 13:12:13,831 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000010.log to file:/data/hbase/oldWALs/pv2-00000000000000000010.log
+2019-05-06 13:16:37,456 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=220, hits=218, hitRatio=99.09%, , cachingAccesses=220, cachingHits=218, cachingHitsRatio=99.09%, evictions=3359, evicted=0, evictedPerRun=0.0
+2019-05-06 13:21:37,102 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=222, hits=220, hitRatio=99.10%, , cachingAccesses=222, cachingHits=220, cachingHitsRatio=99.10%, evictions=3389, evicted=0, evictedPerRun=0.0
+2019-05-06 13:26:36,752 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=224, hits=222, hitRatio=99.11%, , cachingAccesses=224, cachingHits=222, cachingHitsRatio=99.11%, evictions=3419, evicted=0, evictedPerRun=0.0
+2019-05-06 13:31:36,393 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=226, hits=224, hitRatio=99.12%, , cachingAccesses=226, cachingHits=224, cachingHitsRatio=99.12%, evictions=3449, evicted=0, evictedPerRun=0.0
+2019-05-06 13:36:36,039 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=228, hits=226, hitRatio=99.12%, , cachingAccesses=228, cachingHits=226, cachingHitsRatio=99.12%, evictions=3479, evicted=0, evictedPerRun=0.0
+2019-05-06 13:41:35,686 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=230, hits=228, hitRatio=99.13%, , cachingAccesses=230, cachingHits=228, cachingHitsRatio=99.13%, evictions=3509, evicted=0, evictedPerRun=0.0
+2019-05-06 13:46:35,333 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=232, hits=230, hitRatio=99.14%, , cachingAccesses=232, cachingHits=230, cachingHitsRatio=99.14%, evictions=3539, evicted=0, evictedPerRun=0.0
+2019-05-06 13:51:34,976 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=234, hits=232, hitRatio=99.15%, , cachingAccesses=234, cachingHits=232, cachingHitsRatio=99.15%, evictions=3569, evicted=0, evictedPerRun=0.0
+2019-05-06 13:56:32,555 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 13:56:34,623 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=236, hits=234, hitRatio=99.15%, , cachingAccesses=236, cachingHits=234, cachingHitsRatio=99.15%, evictions=3599, evicted=0, evictedPerRun=0.0
+2019-05-06 13:58:26,986 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557147499529 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557151106756
+2019-05-06 13:58:26,987 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557147499529 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557147499529
+2019-05-06 13:58:27,041 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557147499690.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557151107017.meta
+2019-05-06 13:58:27,043 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557147499690.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557147499690.meta
+2019-05-06 14:01:34,266 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=238, hits=236, hitRatio=99.16%, , cachingAccesses=238, cachingHits=236, cachingHitsRatio=99.16%, evictions=3629, evicted=0, evictedPerRun=0.0
+2019-05-06 14:06:33,912 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=240, hits=238, hitRatio=99.17%, , cachingAccesses=240, cachingHits=238, cachingHitsRatio=99.17%, evictions=3659, evicted=0, evictedPerRun=0.0
+2019-05-06 14:11:33,554 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=242, hits=240, hitRatio=99.17%, , cachingAccesses=242, cachingHits=240, cachingHitsRatio=99.17%, evictions=3689, evicted=0, evictedPerRun=0.0
+2019-05-06 14:12:09,680 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=12
+2019-05-06 14:12:09,715 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 11, since no active procedures
+2019-05-06 14:12:09,715 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000011.log to file:/data/hbase/oldWALs/pv2-00000000000000000011.log
+2019-05-06 14:16:33,203 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=244, hits=242, hitRatio=99.18%, , cachingAccesses=244, cachingHits=242, cachingHitsRatio=99.18%, evictions=3719, evicted=0, evictedPerRun=0.0
+2019-05-06 14:21:32,860 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=246, hits=244, hitRatio=99.19%, , cachingAccesses=246, cachingHits=244, cachingHitsRatio=99.19%, evictions=3749, evicted=0, evictedPerRun=0.0
+2019-05-06 14:26:32,492 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=248, hits=246, hitRatio=99.19%, , cachingAccesses=248, cachingHits=246, cachingHitsRatio=99.19%, evictions=3779, evicted=0, evictedPerRun=0.0
+2019-05-06 14:27:56,158 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 14:31:32,144 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=250, hits=248, hitRatio=99.20%, , cachingAccesses=250, cachingHits=248, cachingHitsRatio=99.20%, evictions=3809, evicted=0, evictedPerRun=0.0
+2019-05-06 14:36:31,797 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=252, hits=250, hitRatio=99.21%, , cachingAccesses=252, cachingHits=250, cachingHitsRatio=99.21%, evictions=3839, evicted=0, evictedPerRun=0.0
+2019-05-06 14:41:31,427 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=254, hits=252, hitRatio=99.21%, , cachingAccesses=254, cachingHits=252, cachingHitsRatio=99.21%, evictions=3869, evicted=0, evictedPerRun=0.0
+2019-05-06 14:46:31,071 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=256, hits=254, hitRatio=99.22%, , cachingAccesses=256, cachingHits=254, cachingHitsRatio=99.22%, evictions=3899, evicted=0, evictedPerRun=0.0
+2019-05-06 14:51:30,717 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=258, hits=256, hitRatio=99.22%, , cachingAccesses=258, cachingHits=256, cachingHitsRatio=99.22%, evictions=3929, evicted=0, evictedPerRun=0.0
+2019-05-06 14:56:28,301 INFO  [MobFileCache #0] mob.MobFileCache: MobFileCache Statistics, access: 0, miss: 0, hit: 0, hit ratio: 0%, evicted files: 0
+2019-05-06 14:56:30,363 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=260, hits=258, hitRatio=99.23%, , cachingAccesses=260, cachingHits=258, cachingHitsRatio=99.23%, evictions=3959, evicted=0, evictedPerRun=0.0
+2019-05-06 14:58:33,402 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557151106756 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557154713237
+2019-05-06 14:58:33,403 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557151106756 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557151106756
+2019-05-06 14:58:33,456 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557151107017.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557154713433.meta
+2019-05-06 14:58:33,456 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557151107017.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557151107017.meta
+2019-05-06 15:01:30,011 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=262, hits=260, hitRatio=99.24%, , cachingAccesses=262, cachingHits=260, cachingHitsRatio=99.24%, evictions=3989, evicted=0, evictedPerRun=0.0
+2019-05-06 15:06:29,651 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=264, hits=262, hitRatio=99.24%, , cachingAccesses=264, cachingHits=262, cachingHitsRatio=99.24%, evictions=4019, evicted=0, evictedPerRun=0.0
+2019-05-06 15:11:29,298 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=266, hits=264, hitRatio=99.25%, , cachingAccesses=266, cachingHits=264, cachingHitsRatio=99.25%, evictions=4049, evicted=0, evictedPerRun=0.0
+2019-05-06 15:12:05,564 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Rolled new Procedure Store WAL, id=13
+2019-05-06 15:12:05,580 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore: Remove all state logs with ID less than 12, since no active procedures
+2019-05-06 15:12:05,580 INFO  [WALProcedureStoreSyncThread] wal.ProcedureWALFile: Archiving file:/data/hbase/MasterProcWALs/pv2-00000000000000000012.log to file:/data/hbase/oldWALs/pv2-00000000000000000012.log
+2019-05-06 15:16:18,302 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 15:16:28,943 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=268, hits=266, hitRatio=99.25%, , cachingAccesses=268, cachingHits=266, cachingHitsRatio=99.25%, evictions=4079, evicted=0, evictedPerRun=0.0
+2019-05-06 15:21:28,595 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=270, hits=268, hitRatio=99.26%, , cachingAccesses=270, cachingHits=268, cachingHitsRatio=99.26%, evictions=4109, evicted=0, evictedPerRun=0.0
+2019-05-06 15:25:28,633 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 15:26:28,237 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=148.48 KB, freeSize=193.23 MB, max=193.38 MB, blockCount=2, accesses=272, hits=270, hitRatio=99.26%, , cachingAccesses=272, cachingHits=270, cachingHitsRatio=99.26%, evictions=4139, evicted=0, evictedPerRun=0.0
+2019-05-06 15:30:07,918 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 15:30:09,571 INFO  [JvmPauseMonitor] util.JvmPauseMonitor: Detected pause in JVM or host machine (eg GC): pause of approximately 1162ms
+No GCs detected
+2019-05-06 16:19:54,016 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor missed its start time
+2019-05-06 16:19:54,048 WARN  [M:0;hbase-docker:16000] util.Sleeper: We slept 2968089ms instead of 3000ms, this is likely due to a long garbage collecting pause and it's usually bad, see http://hbase.apache.org/book.html#trouble.rs.runtime.zkexpired
+2019-05-06 16:19:54,679 WARN  [master/hbase-docker:16000:becomeActiveMaster-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2968425ms for sessionid 0x16a8b49c57f0004
+2019-05-06 16:19:54,681 WARN  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2968425ms for sessionid 0x16a8b49c57f0000
+2019-05-06 16:19:54,687 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2968425ms for sessionid 0x16a8b49c57f0000, closing socket connection and attempting reconnect
+2019-05-06 16:19:54,687 INFO  [master/hbase-docker:16000:becomeActiveMaster-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2968425ms for sessionid 0x16a8b49c57f0004, closing socket connection and attempting reconnect
+2019-05-06 16:19:54,702 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x16a8b49c57f0004, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:239)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-06 16:19:54,741 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.17.0.2:55298 which had sessionid 0x16a8b49c57f0004
+2019-05-06 16:19:54,749 WARN  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2968429ms for sessionid 0x16a8b49c57f0001
+2019-05-06 16:19:54,749 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2968429ms for sessionid 0x16a8b49c57f0001, closing socket connection and attempting reconnect
+2019-05-06 16:19:54,751 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x16a8b49c57f0000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:239)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-06 16:19:54,755 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.17.0.2:55290 which had sessionid 0x16a8b49c57f0000
+2019-05-06 16:19:54,761 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x16a8b49c57f0001, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:239)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-06 16:19:54,764 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.17.0.2:55292 which had sessionid 0x16a8b49c57f0001
+2019-05-06 16:19:55,096 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x16a8b49c57f0004, timeout of 10000ms exceeded
+2019-05-06 16:19:55,100 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x16a8b49c57f0000, timeout of 10000ms exceeded
+2019-05-06 16:19:55,101 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x16a8b49c57f0001, timeout of 10000ms exceeded
+2019-05-06 16:19:55,120 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x16a8b49c57f0004
+2019-05-06 16:19:55,130 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x16a8b49c57f0000
+2019-05-06 16:19:55,133 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x16a8b49c57f0001
+2019-05-06 16:19:55,715 WARN  [RS:0;hbase-docker:16020] util.Sleeper: We slept 2968090ms instead of 3000ms, this is likely due to a long garbage collecting pause and it's usually bad, see http://hbase.apache.org/book.html#trouble.rs.runtime.zkexpired
+2019-05-06 16:19:56,149 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Opening socket connection to server hbase-docker/172.17.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-05-06 16:19:56,149 INFO  [master/hbase-docker:16000:becomeActiveMaster-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Opening socket connection to server hbase-docker/172.17.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-05-06 16:19:56,157 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Socket connection established to hbase-docker/172.17.0.2:2181, initiating session
+2019-05-06 16:19:56,159 INFO  [master/hbase-docker:16000:becomeActiveMaster-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Socket connection established to hbase-docker/172.17.0.2:2181, initiating session
+2019-05-06 16:19:56,162 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.17.0.2:55582
+2019-05-06 16:19:56,165 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x16a8b49c57f0004 at /172.17.0.2:55582
+2019-05-06 16:19:56,169 WARN  [master/hbase-docker:16000:becomeActiveMaster-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x16a8b49c57f0004 has expired
+2019-05-06 16:19:56,170 INFO  [master/hbase-docker:16000:becomeActiveMaster-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x16a8b49c57f0004
+2019-05-06 16:19:56,170 INFO  [master/hbase-docker:16000:becomeActiveMaster-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x16a8b49c57f0004 has expired, closing socket connection
+2019-05-06 16:19:56,176 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x16a8b49c57f0004 for client /172.17.0.2:55582, probably expired
+2019-05-06 16:19:56,177 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.17.0.2:55580
+2019-05-06 16:19:56,179 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.17.0.2:55582 which had sessionid 0x16a8b49c57f0004
+2019-05-06 16:19:56,258 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x16a8b49c57f0000 at /172.17.0.2:55580
+2019-05-06 16:19:56,258 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x16a8b49c57f0000 for client /172.17.0.2:55580, probably expired
+2019-05-06 16:19:56,259 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Opening socket connection to server hbase-docker/172.17.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-05-06 16:19:56,260 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Socket connection established to hbase-docker/172.17.0.2:2181, initiating session
+2019-05-06 16:19:56,261 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.17.0.2:55580 which had sessionid 0x16a8b49c57f0000
+2019-05-06 16:19:56,262 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.17.0.2:55586
+2019-05-06 16:19:56,262 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x16a8b49c57f0001 at /172.17.0.2:55586
+2019-05-06 16:19:56,263 WARN  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x16a8b49c57f0001 has expired
+2019-05-06 16:19:56,263 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x16a8b49c57f0001 has expired, closing socket connection
+2019-05-06 16:19:56,263 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x16a8b49c57f0001 for client /172.17.0.2:55586, probably expired
+2019-05-06 16:19:56,263 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.17.0.2:55586 which had sessionid 0x16a8b49c57f0001
+2019-05-06 16:19:56,291 WARN  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x16a8b49c57f0000 has expired
+2019-05-06 16:19:56,291 INFO  [main-SendThread(hbase-docker:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x16a8b49c57f0000 has expired, closing socket connection
+2019-05-06 16:19:56,385 ERROR [main-EventThread] regionserver.HRegionServer: ***** ABORTING region server hbase-docker,16020,1557115037105: regionserver:16020-0x16a8b49c57f0001, quorum=hbase-docker:2181, baseZNode=/hbase regionserver:16020-0x16a8b49c57f0001 received expired from ZooKeeper, aborting *****
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.connectionEvent(ZKWatcher.java:557)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.process(ZKWatcher.java:487)
+	at org.apache.hadoop.hbase.zookeeper.PendingWatcher.process(PendingWatcher.java:40)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:530)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:505)
+2019-05-06 16:19:56,390 ERROR [main-EventThread] regionserver.HRegionServer: RegionServer abort: loaded coprocessors are: [org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint]
+2019-05-06 16:19:56,408 ERROR [main-EventThread] master.HMaster: Master server abort: loaded coprocessors are: [org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint]
+2019-05-06 16:19:56,408 ERROR [main-EventThread] master.HMaster: ***** ABORTING master hbase-docker,16000,1557115029636: master:16000-0x16a8b49c57f0000, quorum=hbase-docker:2181, baseZNode=/hbase master:16000-0x16a8b49c57f0000 received expired from ZooKeeper, aborting *****
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.connectionEvent(ZKWatcher.java:557)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.process(ZKWatcher.java:487)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:530)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:505)
+2019-05-06 16:19:56,425 INFO  [main-EventThread] regionserver.HRegionServer: ***** STOPPING region server 'hbase-docker,16000,1557115029636' *****
+2019-05-06 16:19:56,425 INFO  [main-EventThread] regionserver.HRegionServer: STOPPED: Stopped by main-EventThread
+2019-05-06 16:19:56,466 INFO  [M:0;hbase-docker:16000] regionserver.HRegionServer: Stopping infoServer
+2019-05-06 16:19:56,542 WARN  [main-EventThread] zookeeper.ZKUtil: master:16000-0x16a8b49c57f0000, quorum=hbase-docker:2181, baseZNode=/hbase Unable to get data of znode /hbase/master
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1212)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:340)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:610)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:150)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:269)
+	at org.apache.hadoop.hbase.master.HMaster.stop(HMaster.java:2947)
+	at org.apache.hadoop.hbase.master.HMaster.stopMaster(HMaster.java:2939)
+	at org.apache.hadoop.hbase.master.HMaster.abort(HMaster.java:2854)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.connectionEvent(ZKWatcher.java:557)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.process(ZKWatcher.java:487)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:530)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:505)
+2019-05-06 16:19:56,544 ERROR [main-EventThread] zookeeper.ZKWatcher: master:16000-0x16a8b49c57f0000, quorum=hbase-docker:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1212)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:340)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:610)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:150)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:269)
+	at org.apache.hadoop.hbase.master.HMaster.stop(HMaster.java:2947)
+	at org.apache.hadoop.hbase.master.HMaster.stopMaster(HMaster.java:2939)
+	at org.apache.hadoop.hbase.master.HMaster.abort(HMaster.java:2854)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.connectionEvent(ZKWatcher.java:557)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.process(ZKWatcher.java:487)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:530)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:505)
+2019-05-06 16:19:56,549 INFO  [main-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x16a8b49c57f0000
+2019-05-06 16:19:57,021 INFO  [master/hbase-docker:16000.splitLogManager..Chore.1] hbase.ScheduledChore: Chore: SplitLogManager Timeout Monitor was stopped
+2019-05-06 16:19:57,189 INFO  [M:0;hbase-docker:16000] handler.ContextHandler: Stopped o.e.j.w.WebAppContext@2a22ad2b{/,null,UNAVAILABLE}{file:/opt/hbase/hbase-webapps/master}
+2019-05-06 16:19:57,238 INFO  [regionserver/hbase-docker:16020.Chore.1] hbase.ScheduledChore: Chore: MovedRegionsCleaner for region hbase-docker,16020,1557115037105 missed its start time
+2019-05-06 16:19:57,268 INFO  [regionserver/hbase-docker:16020.Chore.2] hbase.ScheduledChore: Chore: CompactionChecker missed its start time
+2019-05-06 16:19:57,271 INFO  [regionserver/hbase-docker:16020.Chore.3] hbase.ScheduledChore: Chore: CompactedHFilesCleaner missed its start time
+2019-05-06 16:19:57,273 INFO  [regionserver/hbase-docker:16020.Chore.3] hbase.ScheduledChore: Chore: CompactionThroughputTuner missed its start time
+2019-05-06 16:19:57,293 INFO  [regionserver/hbase-docker:16020.Chore.1] hbase.ScheduledChore: Chore: MemstoreFlusherChore missed its start time
+2019-05-06 16:19:57,299 INFO  [regionserver/hbase-docker:16020.Chore.2] hbase.ScheduledChore: Chore: hbase-docker,16020,1557115037105-HeapMemoryTunerChore missed its start time
+2019-05-06 16:19:57,328 INFO  [M:0;hbase-docker:16000] server.AbstractConnector: Stopped ServerConnector@27c04377{HTTP/1.1,[http/1.1]}{hbase-docker:16010}
+2019-05-06 16:19:57,331 INFO  [M:0;hbase-docker:16000] handler.ContextHandler: Stopped o.e.j.s.ServletContextHandler@53093491{/static,file:///opt/hbase/hbase-webapps/static/,UNAVAILABLE}
+2019-05-06 16:19:57,338 INFO  [M:0;hbase-docker:16000] handler.ContextHandler: Stopped o.e.j.s.ServletContextHandler@6ff37443{/logs,file:///opt/hbase/logs/,UNAVAILABLE}
+2019-05-06 16:19:57,423 INFO  [M:0;hbase-docker:16000] regionserver.HRegionServer: stopping server hbase-docker,16000,1557115029636
+2019-05-06 16:19:57,443 INFO  [main-EventThread] regionserver.HRegionServer: 
+    "FlushOutputSize_max" : 0,
+    "FlushOutputSize_mean" : 0,
+    "FlushOutputSize_25th_percentile" : 0,
+    "FlushOutputSize_median" : 0,
+    "FlushOutputSize_75th_percentile" : 0,
+    "FlushOutputSize_90th_percentile" : 0,
+    "FlushOutputSize_95th_percentile" : 0,
+    "FlushOutputSize_98th_percentile" : 0,
+    "FlushOutputSize_99th_percentile" : 0,
+    "FlushOutputSize_99.9th_percentile" : 0,
+    "FlushOutputSize_SizeRangeCount_100000000-inf" : 2,
+    "Bulkload_count" : 0,
+    "Bulkload_mean_rate" : 0.0,
+    "Bulkload_1min_rate" : 0.0,
+    "Bulkload_5min_rate" : 0.0,
+    "Bulkload_15min_rate" : 0.0,
+    "Bulkload_num_ops" : 0,
+    "Bulkload_min" : 0,
+    "Bulkload_max" : 0,
+    "Bulkload_mean" : 0,
+    "Bulkload_25th_percentile" : 0,
+    "Bulkload_median" : 0,
+    "Bulkload_75th_percentile" : 0,
+    "Bulkload_90th_percentile" : 0,
+    "Bulkload_95th_percentile" : 0,
+    "Bulkload_98th_percentile" : 0,
+    "Bulkload_99th_percentile" : 0,
+    "Bulkload_99.9th_percentile" : 0
+  } ]
+}
+2019-05-06 16:19:57,445 INFO  [M:0;hbase-docker:16000] regionserver.HRegionServer: stopping server hbase-docker,16000,1557115029636; all regions closed.
+2019-05-06 16:19:57,449 INFO  [M:0;hbase-docker:16000] master.MasterMobCompactionThread: Waiting for Mob Compaction Thread to finish...
+2019-05-06 16:19:57,449 INFO  [M:0;hbase-docker:16000] master.MasterMobCompactionThread: Waiting for Region Server Mob Compaction Thread to finish...
+2019-05-06 16:19:57,494 INFO  [M:0;hbase-docker:16000] hbase.ChoreService: Chore service for: master/hbase-docker:16000 had [] on shutdown
+2019-05-06 16:19:57,496 WARN  [M:0;hbase-docker:16000] zookeeper.ZKUtil: master:16000-0x16a8b49c57f0000, quorum=hbase-docker:2181, baseZNode=/hbase Unable to get data of znode /hbase/master
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1212)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:340)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:610)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:150)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:269)
+	at org.apache.hadoop.hbase.master.HMaster.stopServiceThreads(HMaster.java:1404)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1138)
+	at org.apache.hadoop.hbase.master.HMaster.run(HMaster.java:595)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine$LocalHMaster.run(HMasterCommandLine.java:313)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-06 16:19:57,497 ERROR [M:0;hbase-docker:16000] zookeeper.ZKWatcher: master:16000-0x16a8b49c57f0000, quorum=hbase-docker:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1212)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:340)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:610)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:150)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:269)
+	at org.apache.hadoop.hbase.master.HMaster.stopServiceThreads(HMaster.java:1404)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1138)
+	at org.apache.hadoop.hbase.master.HMaster.run(HMaster.java:595)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine$LocalHMaster.run(HMasterCommandLine.java:313)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-06 16:19:57,581 INFO  [M:0;hbase-docker:16000] assignment.AssignmentManager: Stopping assignment manager
+2019-05-06 16:19:57,614 INFO  [M:0;hbase-docker:16000] procedure2.RemoteProcedureDispatcher: Stopping procedure remote dispatcher
+2019-05-06 16:19:57,615 INFO  [M:0;hbase-docker:16000] procedure2.ProcedureExecutor: Stopping
+2019-05-06 16:19:57,672 WARN  [RpcServer.default.FPBQ.Fifo.handler=29,queue=2,port=16000] master.MasterRpcServices: hbase-docker,16020,1557115037105 reported a fatal error:
+***** ABORTING region server hbase-docker,16020,1557115037105: regionserver:16020-0x16a8b49c57f0001, quorum=hbase-docker:2181, baseZNode=/hbase regionserver:16020-0x16a8b49c57f0001 received expired from ZooKeeper, aborting *****
+Cause:
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.connectionEvent(ZKWatcher.java:557)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.process(ZKWatcher.java:487)
+	at org.apache.hadoop.hbase.zookeeper.PendingWatcher.process(PendingWatcher.java:40)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:530)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:505)
+
+2019-05-06 16:19:57,706 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557154713237 with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557159596655
+2019-05-06 16:19:57,708 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.1557154713237 to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.1557154713237
+2019-05-06 16:19:57,759 INFO  [M:0;hbase-docker:16000] wal.WALProcedureStore: Stopping the WAL Procedure Store, isAbort=false
+2019-05-06 16:19:57,789 INFO  [main-EventThread] regionserver.HRegionServer: ***** STOPPING region server 'hbase-docker,16020,1557115037105' *****
+2019-05-06 16:19:57,789 INFO  [main-EventThread] regionserver.HRegionServer: STOPPED: regionserver:16020-0x16a8b49c57f0001, quorum=hbase-docker:2181, baseZNode=/hbase regionserver:16020-0x16a8b49c57f0001 received expired from ZooKeeper, aborting
+2019-05-06 16:19:57,791 ERROR [main-EventThread] regionserver.HRegionServer: ***** ABORTING region server hbase-docker,16020,1557115037105: regionserver:16020-0x16a8b49c57f0001, quorum=hbase-docker:2181, baseZNode=/hbase regionserver:16020-0x16a8b49c57f0001 received expired from ZooKeeper, aborting *****
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.connectionEvent(ZKWatcher.java:557)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.process(ZKWatcher.java:487)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:530)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:505)
+2019-05-06 16:19:57,791 ERROR [main-EventThread] regionserver.HRegionServer: RegionServer abort: loaded coprocessors are: [org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint]
+2019-05-06 16:19:57,791 INFO  [RS:0;hbase-docker:16020] regionserver.SplitLogWorker: Sending interrupt to stop the worker thread
+2019-05-06 16:19:57,793 INFO  [M:0;hbase-docker:16000] hbase.ChoreService: Chore service for: master/hbase-docker:16000.splitLogManager. had [] on shutdown
+2019-05-06 16:19:57,796 INFO  [M:0;hbase-docker:16000] flush.MasterFlushTableProcedureManager: stop: server shutting down.
+2019-05-06 16:19:57,798 INFO  [RS:0;hbase-docker:16020] regionserver.HRegionServer: Stopping infoServer
+2019-05-06 16:19:57,871 INFO  [M:0;hbase-docker:16000] ipc.NettyRpcServer: Stopping server on /172.17.0.2:16000
+2019-05-06 16:19:58,044 INFO  [RS:0;hbase-docker:16020] handler.ContextHandler: Stopped o.e.j.w.WebAppContext@369c9bb{/,null,UNAVAILABLE}{file:/opt/hbase/hbase-webapps/regionserver}
+2019-05-06 16:19:58,047 INFO  [SplitLogWorker-hbase-docker:16020] regionserver.SplitLogWorker: SplitLogWorker interrupted. Exiting. 
+2019-05-06 16:19:58,047 INFO  [main-EventThread] regionserver.HRegionServer: 
+    "FlushOutputSize_max" : 0,
+    "FlushOutputSize_mean" : 0,
+    "FlushOutputSize_25th_percentile" : 0,
+    "FlushOutputSize_median" : 0,
+    "FlushOutputSize_75th_percentile" : 0,
+    "FlushOutputSize_90th_percentile" : 0,
+    "FlushOutputSize_95th_percentile" : 0,
+    "FlushOutputSize_98th_percentile" : 0,
+    "FlushOutputSize_99th_percentile" : 0,
+    "FlushOutputSize_99.9th_percentile" : 0,
+    "FlushOutputSize_SizeRangeCount_100000000-inf" : 2,
+    "Bulkload_count" : 0,
+    "Bulkload_mean_rate" : 0.0,
+    "Bulkload_1min_rate" : 0.0,
+    "Bulkload_5min_rate" : 0.0,
+    "Bulkload_15min_rate" : 0.0,
+    "Bulkload_num_ops" : 0,
+    "Bulkload_min" : 0,
+    "Bulkload_max" : 0,
+    "Bulkload_mean" : 0,
+    "Bulkload_25th_percentile" : 0,
+    "Bulkload_median" : 0,
+    "Bulkload_75th_percentile" : 0,
+    "Bulkload_90th_percentile" : 0,
+    "Bulkload_95th_percentile" : 0,
+    "Bulkload_98th_percentile" : 0,
+    "Bulkload_99th_percentile" : 0,
+    "Bulkload_99.9th_percentile" : 0
+  } ]
+}
+2019-05-06 16:19:58,160 INFO  [SplitLogWorker-hbase-docker:16020] regionserver.SplitLogWorker: SplitLogWorker hbase-docker,16020,1557115037105 exiting
+2019-05-06 16:19:58,137 INFO  [RS:0;hbase-docker:16020] server.AbstractConnector: Stopped ServerConnector@76d05cc9{HTTP/1.1,[http/1.1]}{hbase-docker:16030}
+2019-05-06 16:19:58,423 WARN  [main-EventThread] regionserver.HRegionServer: Unable to report fatal error to master
+org.apache.hbase.thirdparty.com.google.protobuf.ServiceException: java.io.IOException: Call to hbase-docker/172.17.0.2:16000 failed on local exception: org.apache.hbase.thirdparty.io.netty.channel.unix.Errors$NativeIoException: syscall:read(..) failed: Connection reset by peer
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.callBlockingMethod(AbstractRpcClient.java:336)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.access$200(AbstractRpcClient.java:95)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient$BlockingRpcChannelImplementation.callBlockingMethod(AbstractRpcClient.java:571)
+	at org.apache.hadoop.hbase.shaded.protobuf.generated.RegionServerStatusProtos$RegionServerStatusService$BlockingStub.reportRSFatalError(RegionServerStatusProtos.java:13619)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.abort(HRegionServer.java:2382)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.connectionEvent(ZKWatcher.java:557)
+	at org.apache.hadoop.hbase.zookeeper.ZKWatcher.process(ZKWatcher.java:487)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:530)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:505)
+Caused by: java.io.IOException: Call to hbase-docker/172.17.0.2:16000 failed on local exception: org.apache.hbase.thirdparty.io.netty.channel.unix.Errors$NativeIoException: syscall:read(..) failed: Connection reset by peer
+	at org.apache.hadoop.hbase.ipc.IPCUtil.wrapException(IPCUtil.java:185)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.onCallFinished(AbstractRpcClient.java:390)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.access$100(AbstractRpcClient.java:95)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient$3.run(AbstractRpcClient.java:410)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient$3.run(AbstractRpcClient.java:406)
+	at org.apache.hadoop.hbase.ipc.Call.callComplete(Call.java:103)
+	at org.apache.hadoop.hbase.ipc.Call.setException(Call.java:118)
+	at org.apache.hadoop.hbase.ipc.NettyRpcDuplexHandler.cleanupCalls(NettyRpcDuplexHandler.java:203)
+	at org.apache.hadoop.hbase.ipc.NettyRpcDuplexHandler.exceptionCaught(NettyRpcDuplexHandler.java:220)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:285)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:264)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:256)
+	at org.apache.hbase.thirdparty.io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:131)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:285)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:264)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:256)
+	at org.apache.hbase.thirdparty.io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:131)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:285)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:264)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:256)
+	at org.apache.hbase.thirdparty.io.netty.channel.DefaultChannelPipeline$HeadContext.exceptionCaught(DefaultChannelPipeline.java:1326)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:285)
+	at org.apache.hbase.thirdparty.io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:264)
+	at org.apache.hbase.thirdparty.io.netty.channel.DefaultChannelPipeline.fireExceptionCaught(DefaultChannelPipeline.java:923)
+	at org.apache.hbase.thirdparty.io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.handleReadException(AbstractEpollStreamChannel.java:738)
+	at org.apache.hbase.thirdparty.io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:827)
+	at org.apache.hbase.thirdparty.io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:404)
+	at org.apache.hbase.thirdparty.io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:304)
+	at org.apache.hbase.thirdparty.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at org.apache.hbase.thirdparty.io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hbase.thirdparty.io.netty.channel.unix.Errors$NativeIoException: syscall:read(..) failed: Connection reset by peer
+	at org.apache.hbase.thirdparty.io.netty.channel.unix.FileDescriptor.readAddress(..)(Unknown Source)
+2019-05-06 16:19:58,675 INFO  [main-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x16a8b49c57f0001
+2019-05-06 16:19:58,660 INFO  [RS:0;hbase-docker:16020] handler.ContextHandler: Stopped o.e.j.s.ServletContextHandler@6345e7b9{/static,file:///opt/hbase/hbase-webapps/static/,UNAVAILABLE}
+2019-05-06 16:19:58,974 INFO  [RS:0;hbase-docker:16020] handler.ContextHandler: Stopped o.e.j.s.ServletContextHandler@de18f63{/logs,file:///opt/hbase/logs/,UNAVAILABLE}
+2019-05-06 16:19:59,036 INFO  [RS:0;hbase-docker:16020] regionserver.HeapMemoryManager: Stopping
+2019-05-06 16:19:59,041 INFO  [RS:0;hbase-docker:16020] flush.RegionServerFlushTableProcedureManager: Stopping region server flush procedure manager abruptly.
+2019-05-06 16:19:59,041 INFO  [RS:0;hbase-docker:16020] snapshot.RegionServerSnapshotManager: Stopping RegionServerSnapshotManager abruptly.
+2019-05-06 16:19:59,159 INFO  [MemStoreFlusher.1] regionserver.MemStoreFlusher: MemStoreFlusher.1 exiting
+2019-05-06 16:19:59,315 INFO  [RS:0;hbase-docker:16020] regionserver.HRegionServer: aborting server hbase-docker,16020,1557115037105
+2019-05-06 16:19:59,329 WARN  [M:0;hbase-docker:16000] regionserver.HRegionServer: Failed deleting my ephemeral node
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/hbase-docker,16000,1557115029636
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.delete(ZooKeeper.java:873)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.delete(RecoverableZooKeeper.java:166)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1231)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1220)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.deleteMyEphemeralNode(HRegionServer.java:1592)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1146)
+	at org.apache.hadoop.hbase.master.HMaster.run(HMaster.java:595)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine$LocalHMaster.run(HMasterCommandLine.java:313)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-06 16:20:00,324 INFO  [M:0;hbase-docker:16000] regionserver.HRegionServer: Exiting; stopping=hbase-docker,16000,1557115029636; zookeeper connection closed.
+2019-05-06 16:19:59,318 INFO  [MemStoreFlusher.0] regionserver.MemStoreFlusher: MemStoreFlusher.0 exiting
+2019-05-06 16:20:05,778 INFO  [regionserver/hbase-docker:16020.leaseChecker] regionserver.Leases: Closed leases
+2019-05-06 16:20:09,674 INFO  [regionserver/hbase-docker:16020.Chore.2] hbase.ScheduledChore: Chore: MemstoreFlusherChore was stopped
+2019-05-06 16:20:09,159 INFO  [JvmPauseMonitor] util.JvmPauseMonitor: Detected pause in JVM or host machine (eg GC): pause of approximately 5012ms
+No GCs detected
+2019-05-06 16:20:09,798 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: NIOServerCnxn factory exited run method
+2019-05-06 16:20:09,801 INFO  [M:0;hbase-docker:16000] server.ZooKeeperServer: shutting down
+2019-05-06 16:20:09,801 ERROR [M:0;hbase-docker:16000] server.ZooKeeperServer: ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2019-05-06 16:20:09,802 INFO  [M:0;hbase-docker:16000] server.SessionTrackerImpl: Shutting down
+2019-05-06 16:20:09,802 INFO  [M:0;hbase-docker:16000] server.PrepRequestProcessor: Shutting down
+2019-05-06 16:20:09,803 INFO  [M:0;hbase-docker:16000] server.SyncRequestProcessor: Shutting down
+2019-05-06 16:20:09,804 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: PrepRequestProcessor exited loop!
+2019-05-06 16:20:09,854 INFO  [RS:0;hbase-docker:16020] regionserver.CompactSplit: Waiting for Split Thread to finish...
+2019-05-06 16:20:09,934 INFO  [RS:0;hbase-docker:16020] regionserver.CompactSplit: Waiting for Large Compaction Thread to finish...
+2019-05-06 16:20:09,934 INFO  [RS:0;hbase-docker:16020] regionserver.CompactSplit: Waiting for Small Compaction Thread to finish...
+2019-05-06 16:20:09,875 INFO  [SyncThread:0] server.SyncRequestProcessor: SyncRequestProcessor exited!
+2019-05-06 16:20:10,044 INFO  [regionserver/hbase-docker:16020.Chore.7] hbase.ScheduledChore: Chore: CompactionChecker was stopped
+2019-05-06 16:20:10,031 INFO  [SessionTracker] server.SessionTrackerImpl: SessionTrackerImpl exited loop!
+2019-05-06 16:20:11,211 INFO  [M:0;hbase-docker:16000] server.FinalRequestProcessor: shutdown of request processor complete
+2019-05-06 16:20:11,768 INFO  [JvmPauseMonitor] util.JvmPauseMonitor: Detected pause in JVM or host machine (eg GC): pause of approximately 1072ms
+No GCs detected
+2019-05-06 16:20:15,187 INFO  [RS:0;hbase-docker:16020] regionserver.HRegionServer: Waiting on 2 regions to close
+2019-05-06 16:20:15,802 INFO  [JvmPauseMonitor] util.JvmPauseMonitor: Detected pause in JVM or host machine (eg GC): pause of approximately 1277ms
+No GCs detected
+2019-05-06 16:20:19,516 INFO  [M:0;hbase-docker:16000] zookeeper.MiniZooKeeperCluster: Shutdown MiniZK cluster with all ZK servers
+2019-05-06 16:20:21,882 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Rolled WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557154713433.meta with entries=0, filesize=83 B; new WAL /data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557159598312.meta
+2019-05-06 16:20:21,892 INFO  [regionserver/hbase-docker:16020.logRoller] wal.AbstractFSWAL: Archiving file:/data/hbase/WALs/hbase-docker,16020,1557115037105/hbase-docker%2C16020%2C1557115037105.meta.1557154713433.meta to file:/data/hbase/oldWALs/hbase-docker%2C16020%2C1557115037105.meta.1557154713433.meta
+2019-05-06 16:20:21,927 INFO  [RS_CLOSE_REGION-regionserver/hbase-docker:16020-0] regionserver.HRegion: Closed hbase:namespace,,1557115051022.73bd4e47a5e60dbd74906c2ec81d72fb.
+2019-05-06 16:20:21,960 INFO  [RS_CLOSE_META-regionserver/hbase-docker:16020-0] regionserver.HRegion: Closed hbase:meta,,1.1588230740
+2019-05-06 16:20:22,091 INFO  [RS:0;hbase-docker:16020] regionserver.HRegionServer: stopping server hbase-docker,16020,1557115037105; all regions closed.
+2019-05-06 16:20:22,132 INFO  [RS:0;hbase-docker:16020] regionserver.Leases: Closed leases
+2019-05-06 16:20:22,152 INFO  [RS:0;hbase-docker:16020] hbase.ChoreService: Chore service for: regionserver/hbase-docker:16020 had [[ScheduledChore: Name: CompactionThroughputTuner Period: 60000 Unit: MILLISECONDS], [ScheduledChore: Name: CompactedHFilesCleaner Period: 120000 Unit: MILLISECONDS]] on shutdown
+2019-05-06 16:20:22,154 INFO  [regionserver/hbase-docker:16020.logRoller] regionserver.LogRoller: LogRoller exiting.
+2019-05-06 16:20:22,186 INFO  [RS:0;hbase-docker:16020] ipc.NettyRpcServer: Stopping server on /172.17.0.2:16020
+2019-05-06 16:20:22,199 WARN  [RS:0;hbase-docker:16020] regionserver.HRegionServer: Failed deleting my ephemeral node
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/hbase-docker,16020,1557115037105
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.delete(ZooKeeper.java:873)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.delete(RecoverableZooKeeper.java:166)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1231)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1220)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.deleteMyEphemeralNode(HRegionServer.java:1592)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1146)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-06 16:20:22,203 INFO  [RS:0;hbase-docker:16020] regionserver.HRegionServer: Exiting; stopping=hbase-docker,16020,1557115037105; zookeeper connection closed.
+2019-05-06 16:20:22,752 INFO  [Thread-5] regionserver.ShutdownHook: Shutdown hook starting; hbase.shutdown.hook=true; fsShutdownHook=org.apache.hadoop.fs.FileSystem$Cache$ClientFinalizer@e36bb2a
+2019-05-06 16:20:22,989 INFO  [Thread-5] regionserver.ShutdownHook: Starting fs shutdown hook thread.
+2019-05-06 16:20:23,398 INFO  [Thread-5] regionserver.ShutdownHook: Shutdown hook finished.
