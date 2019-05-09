@@ -1,0 +1,9 @@
+teniendo instalado happybase en python, ejecutar docker usando:
+    docker-compose up
+        *y en una ventana aparte de la terminal:
+    docker-compose exec hbase hbase thrift start
+
+si no se tiene instalado happybase, para instalarlo usar:
+    pip install happybase
+    	*en caso de que tire error, y se este usando anaconda, usar:
+    conda install -c conda-forge thriftpy 
